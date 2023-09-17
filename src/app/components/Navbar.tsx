@@ -51,8 +51,8 @@ const Navbar:FC = () => {
     <div className="p-4 sm:hidden relative w-full">
      <HiMenu
      onClick={() => setHidden(!hidden)}
-     className="absolute left-0 top-1 mx-4 text-black"
-     fontSize={25}
+     className="absolute left-0 top-0.5 text-black"
+     fontSize={32}
      />
     <div className={`rounded-r-md shadow-lg shadow-primary bg-white z-20 mt-8 absolute min-h-screen w-4/5 ease-in-out duration-500 ${(hidden) ? ("-translate-x-96") : ("-translate-x-28")}`}>
         <ul className="flex flex-col mt-16 text-sm font-semibold">
