@@ -1,13 +1,11 @@
 "use client";
-import React , {useEffect} from 'react'
+import React, { useEffect } from "react";
 import Image from "next/image";
-import Navbar from './../components/Navbar';
-import {TbTargetArrow} from 'react-icons/tb'
-import {SlBadge} from 'react-icons/sl'
-
+import Navbar from "./../components/Navbar";
+import { TbTargetArrow } from "react-icons/tb";
+import { SlBadge } from "react-icons/sl";
 
 export default function Page() {
-
   // const useMouseMove = () => {
   //   useEffect(() => {
   //     const handleMouseMove = (e: MouseEventInit) => {
@@ -20,9 +18,9 @@ export default function Page() {
   //         card.style.setProperty("--mouse-y", `${y}px`);
   //       }
   //     };
-  
+
   //     document.getElementById("cards").addEventListener("mousemove", handleMouseMove);
-  
+
   //     return () => {
   //       document.getElementById("cards").removeEventListener("mousemove", handleMouseMove);
   //     };
@@ -32,46 +30,43 @@ export default function Page() {
   const Values = [
     {
       id: 1,
-      char: 'A',
-      word: 'ccessibility',
-      desc: 'We commit ourselves to ensure every individual, irrespective of location, has access to our advanced healthcare services',
+      char: "A",
+      word: "ccessibility",
+      desc: "We commit ourselves to ensure every individual, irrespective of location, has access to our advanced healthcare services",
     },
     {
       id: 2,
-      char: 'V',
-      word: 'isionary Innovation',
-      desc: 'We constantly push the boundaries of possibilities in healthcare, embracing AI, and advanced technologies.',
+      char: "V",
+      word: "isionary Innovation",
+      desc: "We constantly push the boundaries of possibilities in healthcare, embracing AI, and advanced technologies.",
     },
     {
       id: 3,
-      char: 'I',
-      word: 'ccessibility',
-      desc: 'We commit ourselves to ensure every individual, irrespective of location, has access to our advanced healthcare services',
+      char: "I",
+      word: "ntegrity",
+      desc: "We uphold the standards of professional conduct, promising transparency, honesty, and respect in all our interactions.",
     },
     {
       id: 4,
-      char: 'S',
-      word: 'ccessibility',
-      desc: 'We commit ourselves to ensure every individual, irrespective of location, has access to our advanced healthcare services',
+      char: "S",
+      word: "ervice Excellence",
+      desc: "We strive to go beyond expectations, delivering top-tier healthcare services and creating a patient-centered environment.",
     },
     {
       id: 5,
-      char: 'A',
-      word: 'ccessibility',
-      desc: 'We commit ourselves to ensure every individual, irrespective of location, has access to our advanced healthcare services',
+      char: "A",
+      word: "mbition",
+      desc: "We work relentlessly to pursue our goal of eradicating sickle cell disease from India and reducing maternal immortality.",
     },
-  ]
-
+  ];
 
   return (
-    <main className="bg-white relative flex min-h-screen flex-col items-center md:px-36 px-6">
-      <Navbar/>
-      <div className="bg-transparent h-[100px]">
-      </div>
+    <main className="bg-white relative flex min-h-screen flex-col items-center md:px-36 px-6 md:pb-36">
+      <Navbar />
+      <div className="bg-transparent h-[100px]"></div>
       <div id="">
         <div className="grid md:grid-cols-2 grid-cols-1 my-4">
           <Image
-          
             alt="Avisa Logo"
             src="/images/Avisa-Logo.svg"
             width="350"
@@ -80,77 +75,118 @@ export default function Page() {
           />
 
           <div className="text-center font-bold text-gray-500 align-middle">
-          At Avisa Swasthya, we are dedicated to transforming healthcare through
-        innovation and compassion. With our advanced diagnostic solutions, we
-        ensure accurate and accessible testing for all. From comprehensive
-        prenatal and postnatal care to health education and community outreach,
-        our mission is to empower individuals, families, and communities with
-        personalized healthcare solutions for a healthier future.
+            At Avisa Swasthya, we are dedicated to transforming healthcare
+            through innovation and compassion. With our advanced diagnostic
+            solutions, we ensure accurate and accessible testing for all. From
+            comprehensive prenatal and postnatal care to health education and
+            community outreach, our mission is to empower individuals, families,
+            and communities with personalized healthcare solutions for a
+            healthier future.
           </div>
         </div>
 
         <div className="flex md:flex-row flex-col text-sm my-12">
-        <div className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
-          <TbTargetArrow
-          fontSize={75}
-          className="mx-auto mb-4 text-primary"
-          />
-          <span className="text-lg font-bold text-primary">
-            Mission
-          </span>
-        &quot;We are dedicated to revolutionizing healthcare accessibility in India, with a primary focus on hemoglobinopathy
-and maternal care. We dedicated enable efficient testing of hemoglobin related diseases, even in the remotest
-part of India. Our mission is to eradicate genetic diseases and reducing maternal mortality, enabling safe
-childbirth across the nation.&quot;
+          <div className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+            <TbTargetArrow
+              fontSize={75}
+              className="mx-auto mb-4 text-primary"
+            />
+            <span className="text-lg font-bold text-primary">Mission</span>
+            &quot;We are dedicated to revolutionizing healthcare accessibility
+            in India, with a primary focus on hemoglobinopathy and maternal
+            care. We dedicated enable efficient testing of hemoglobin related
+            diseases, even in the remotest part of India. Our mission is to
+            eradicate genetic diseases and reducing maternal mortality, enabling
+            safe childbirth across the nation.&quot;
+          </div>
+
+          <div className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+            <SlBadge fontSize={75} className="mx-auto mb-4 text-primary" />
+            <span className="text-lg font-bold text-primary">Vision</span>
+            &quot;Our vision aligns with the nation&apos;s goal to transform
+            India into a nation free of sickle cell anemia and preventing
+            maternal and infant mortality. We envision creating a nation where
+            quality medical services are within the reach of every individual.
+            In the coming years, Avisa Swasthya strives to be the cornerstone of
+            change in the Indian healthcare landscape.&quot;
+          </div>
         </div>
 
-        <div className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
-        <SlBadge
-          fontSize={75}
-          className="mx-auto mb-4 text-primary"
-          />
-          <span className="text-lg font-bold text-primary">
-            Vision
-          </span>
-        &quot;Our vision aligns with the nation&apos;s goal to transform India into a nation free of sickle cell anemia and preventing
-maternal and infant mortality. We envision creating a nation where quality medical services are within the reach of
-every individual. In the coming years, Avisa Swasthya strives to be the cornerstone of change in the Indian
-healthcare landscape.&quot;
-        </div>
-        </div>
+        <div className=" p-8">
+          <div className="mx-auto text-center text-4xl font-bold text-primary">
+            Our Values
+          </div>
 
-
-        <div className="mx-auto text-center text-4xl font-bold text-primary">
-          Our Values
-        </div>
-
-        <div className="flex flex-col">
-          
-            
-            {
-              Values.map((item) => (
-<div 
-key={item.id}
-className="grid w-3/5 mx-auto grid-cols-10">
-              <div className="text-6xl text-center font-bold md:my-auto text-primary col-span-1">
-              {item.char}
-            </div>
-            <div className="flex flex-col p-4 font-semibold col-span-9">
-              <div className="text-primary">
-                {item.word}
+          <div className="flex flex-col">
+            {Values.map((item) => (
+              <div key={item.id} className="grid w-4/5 mx-auto grid-cols-10">
+                <div className="text-6xl text-center font-bold md:my-auto text-primary col-span-1">
+                  {item.char}
+                </div>
+                <div className="flex flex-col p-4 font-semibold col-span-9">
+                  <div className="text-primary">{item.word}</div>
+                  <div className="text-gray-500 font-normal text-sm">
+                    {item.desc}
+                  </div>
+                </div>
               </div>
-              <div className="text-gray-500 font-normal text-sm">
-              {item.desc}
-              </div>
-            </div>
-            </div>
-                          ))
-            }
-            
-         
+            ))}
+          </div>
         </div>
 
+        <div>
+          {/* laptop view */}
+          <div className="mx-auto text-center text-4xl font-bold text-primary">
+            Our Care System
+          </div>
 
+
+          <div className="sm:grid grid-cols-2 gap-4 text-white p-16 hidden">
+            <div className="relative bg-primary h-24 gap-4">
+              <div className="absolute top-0 left-0 p-2 text-sm w-4/5">
+                Community participation in society at large.
+              </div>
+
+              <div className="absolute bottom-0 right-0 text-5xl font-bold bg-white text-primary rounded-tl-full p-4 text-center align-middle">
+                C
+              </div>
+            </div>
+
+            <div className="relative h-24 bg-primary gap-4">
+              <div className="absolute text-5xl font-bold bottom-0 left-0 text-primary bg-white rounded-tr-full p-4 text-center align-middle">
+                A
+              </div>
+
+              <div className="text-sm right-0 top-0 absolute p-2 w-4/5">
+                Adequate deployment of products with latest technology.
+              </div>
+            </div>
+
+            <div className="relative bg-primary h-24 gap-4">
+              <div className="absolute right-0 top-0 font-bold text-5xl p-4 rounded-bl-full bg-white text-primary text-center align-middle">
+                R
+              </div>
+
+              <div className="absolute left-0 bottom-0 p-2 text-sm w-4/5">
+                Reduce gap between awareness Equal opportunities for one and
+                all. & practice.
+              </div>
+            </div>
+
+            <div className="relative bg-primary h-24 gap-4">
+              <div className="absolute left-0 top-0 font-bold text-5xl p-4 rounded-br-full bg-white text-primary text-center align-middle">
+                E
+              </div>
+              
+              <div className="text-sm absolute bottom-0 right-0 p-2 w-4/5 text-right">
+              Equal opportunities for one and all.
+              </div>
+            </div>
+          </div>
+
+          {/* mobile view */}
+          <div></div>
+        </div>
       </div>
     </main>
   );

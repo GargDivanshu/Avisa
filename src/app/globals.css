@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Audiowide&family=DM+Serif+Display&family=Inter&family=Poppins:wght@200&family=Russo+One&family=Work+Sans:wght@300;900&display=swap");
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,12 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-
-
 #cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;  
+  gap: 8px;
   max-width: 916px;
   width: calc(100% - 20px);
 }
@@ -48,7 +46,7 @@ body {
   /* height: 260px; */
   /* flex-direction: column; */
   position: relative;
-  width: 300px;  
+  width: 300px;
 }
 
 .card:hover::before {
@@ -70,16 +68,16 @@ body {
 
 .card::before {
   background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y), 
+    800px circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, 0.06),
     transparent 40%
   );
   z-index: 3;
 }
 
-.card::after {  
+.card::after {
   background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
+    600px circle at var(--mouse-x) var(--mouse-y),
     red,
     transparent 40%
   );

@@ -13,8 +13,8 @@ const Navbar:FC = () => {
 
   return (
     <>
-    <div className="p-4 sm:flex fixed hidden">
-        <ul className="flex text-sm font-semibold text-gray-500">
+    <div className="z-20 p-4 sm:flex fixed hidden bg-white w-full shadow-md">
+        <ul className="flex text-sm font-semibold text-gray-500 mx-auto ">
             
             <Link href="/">
                 <li className="px-4 hover:text-black hover:cursor-pointer">
@@ -40,9 +40,9 @@ const Navbar:FC = () => {
             </li>
             </Link>
 
-            <Link href="/Blog">
+            <Link href="/team">
             <li className="px-4 hover:text-black hover:cursor-pointer">
-                Blog
+                Team
             </li>
             </Link>
         </ul>
@@ -51,7 +51,7 @@ const Navbar:FC = () => {
     <div className="p-4 sm:hidden relative w-full">
      <HiMenu
      onClick={() => setHidden(!hidden)}
-     className="absolute left-0 mx-4 text-black"
+     className="absolute left-0 top-1 mx-4 text-black"
      fontSize={25}
      />
     <div className={`rounded-r-md shadow-lg shadow-primary bg-white z-20 mt-8 absolute min-h-screen w-4/5 ease-in-out duration-500 ${(hidden) ? ("-translate-x-96") : ("-translate-x-28")}`}>
@@ -80,9 +80,9 @@ const Navbar:FC = () => {
             </li>
             </Link>
 
-            <Link href="/Blog">
+            <Link href="/team">
             <li className="px-4 hover:text-black hover:cursor-pointer text-secondary text-center py-2 border-b-[1px] border-primary/50">
-                Blog
+                Team
             </li>
             </Link>
         </ul>

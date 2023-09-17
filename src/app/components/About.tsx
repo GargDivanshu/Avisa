@@ -1,4 +1,6 @@
 import React, { FC } from "react";
+import Image from 'next/image'
+
 
 const About: FC = () => {
   return (
@@ -19,16 +21,44 @@ const About: FC = () => {
         OUR SERVICES
       </span>
       <div className="grid md:grid-cols-4 grid-cols-1 col-span-3 text-sm font-semibold text-white">
-        <div className="bg-primary p-4">
+        <div className="bg-primary p-4 flex flex-col">
+          <Image 
+          src="/1.png"
+          alt="Avisa Swasthya Hemoglobinopathy"
+          width="75"
+          height="75"
+          className="mx-auto my-4"
+          />
         Avisa Swasthya Hemoglobinopathy
         </div>
-        <div className="bg-primary/90 p-4">
+        <div className="bg-primary/90 p-4 flex flex-col">
+        <Image 
+          src="/2.png"
+          alt="Avisa Swasthya Hemoglobinopathy"
+          width="75"
+          height="75"
+          className="mx-auto my-4"
+          />
         Avisa Swasthya Maternal and Child Care 
         </div>
-        <div className="bg-primary/80 p-4">
+        <div className="bg-primary/80 p-4 flex flex-col">
+        <Image 
+          src="/3.png"
+          alt="Avisa Swasthya Hemoglobinopathy"
+          width="75"
+          height="75"
+          className="mx-auto my-4"
+          />
         Avisa Swasthya Awareness
         </div>
-        <div className="bg-primary/70 p-4">
+        <div className="bg-primary/70 p-4 flex flex-col">
+        <Image 
+          src="/4.png"
+          alt="Avisa Swasthya Hemoglobinopathy"
+          width="75"
+          height="75"
+          className="mx-auto my-4"
+          />
         Avisa Swasthya Health and Care Camps
         </div>
       </div>
