@@ -5,7 +5,7 @@ import {AiFillLinkedin, AiOutlineMail} from 'react-icons/ai'
 
 export default function Page() {
     return (
-        <main className="bg-white relative flex h-full flex-col items-center md:px-24 px-6">
+        <main className="bg-white relative flex min-h-screen h-[2200px] flex-col items-center md:px-24 px-6">
             <Navbar/>
             <div className="bg-gradient-to-tr from-slate-500 to-stone-700">
             <div className="w-screen filter mix-blend-overlay bg-cover relative bg-[url('./../../public/banner.jpg')] object-cover h-[100px] md:h-[200px]">
