@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo&family=Audiowide&family=DM+Serif+Display&family=Inter&family=Poppins:wght@200&family=Russo+One&family=Work+Sans:wght@300;900&display=swap");
 
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
