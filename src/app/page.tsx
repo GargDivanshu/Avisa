@@ -1,10 +1,51 @@
+"use client"
+import {useEffect, useState} from 'react'
 import Image from 'next/image'
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Footer from './components/Footer';
+import {HiOutlineArrowCircleLeft, HiOutlineArrowCircleRight} from 'react-icons/hi'
+import 'keen-slider/keen-slider.min.css'
+import { useKeenSlider } from 'keen-slider/react' 
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 export default function Home() {
+
+  const CarouselData = [
+    {
+      id: 1,
+      img: "bg-[url('./../../public/pioneer.jpg')]",
+      text: "Thalassaemia Solutions: 'Pioneering Breakthroughs for Optimal Well-being'",
+    }, 
+    {
+      id: 2,
+      img: "bg-[url('./../../public/testing.jpg')]",
+      text: "Catalyzing Change, Transforming Lives: Affordable Thalassaemia Testing Across India",
+    },
+    {
+      id: 3,
+      img: "bg-[url('./../../public/ai_adv.jpeg')]",
+      text: "The Future of Thalassaemia Diagnosis: Leveraging AI for precise results",
+    }
+  ]
+
+  const [img, setImg] = useState(CarouselData[0].img);
+  const [text, setText] = useState(CarouselData[0].text)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImg(CarouselData[(CarouselData.findIndex(item => item.img === img) + 1) % CarouselData.length].img);
+      setText(CarouselData[(CarouselData.findIndex(item => item.text === text) + 1) % CarouselData.length].text);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [CarouselData, img, text]);
+  
   return (
-    <main className="bg-white relative flex min-h-screen flex-col items-center md:px-24 px-6">
+    <main className="bg-white relative flex min-h-screen md:h-[1300px] h-[2150px] flex-col items-center md:px-24 px-6">
       <Navbar/>
       {/* <Sidebar/> */}
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -21,8 +62,26 @@ export default function Home() {
           </a>
         </div>
       </div> */}
-      <div className="bg-transparent h-[100px]">
+      <div className="bg-transparent h-[20px]">
       </div>
+      
+      <div className={`relative md:w-full w-10/12 md:h-[500px] h-screen ${img} object-scale-down md:object-cover mb-8`}>
+      <div className="absolute top-0 bottom-0 left-0 right-0 m-auto w-4/5 h-3/5 bg-white/50">
+      <span
+      className="italic md:text-3xl text-xl font-bold text-center h-fit absolute top-0 bottom-0 left-0 right-0 m-auto"
+      >
+        {text}
+      </span>
+      </div>
+    </div>
+
+{/* <div className="embla w-screen h-[500px] mt-8" ref={emblaRef}>
+      <div className="embla__container">
+        <div className="bg-[url('./../../public/pioneer.jpg')] object-cover" ></div>
+        <div className="embla__slide text-center">Slide 2</div>
+        <div className="embla__slide">Slide 3</div>
+      </div>
+    </div> */}
       <About/>
 
       {/* <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
@@ -105,6 +164,8 @@ export default function Home() {
           </p>
         </a>
       </div> */}
+
+      <Footer/>
     </main>
   )
 }

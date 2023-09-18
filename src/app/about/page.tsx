@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "./../components/Navbar";
 import { TbTargetArrow } from "react-icons/tb";
 import { SlBadge } from "react-icons/sl";
+import Footer from './../components/Footer';
 
 export default function Page() {
   // const useMouseMove = () => {
@@ -64,7 +65,7 @@ export default function Page() {
     <main className="bg-white relative flex min-h-screen flex-col items-center md:px-36 px-6 md:pb-36">
       <Navbar />
       <div className="bg-transparent h-[100px]"></div>
-      <div id="">
+      <div id="" className="md:mb-48 mb-96">
         <div className="grid md:grid-cols-2 grid-cols-1 my-4">
           <Image
             alt="Avisa Logo"
@@ -74,7 +75,7 @@ export default function Page() {
             className=" border-r-[1px] border-primary text-primary"
           />
 
-          <div className="text-center font-bold text-gray-500 align-middle">
+          <div className="h-fit my-auto text-center font-bold text-gray-500 align-middle">
             At Avisa Swasthya, we are dedicated to transforming healthcare
             through innovation and compassion. With our advanced diagnostic
             solutions, we ensure accurate and accessible testing for all. From
@@ -147,13 +148,13 @@ export default function Page() {
                 Community participation in society at large.
               </div>
 
-              <div className="absolute bottom-0 right-0 text-5xl font-bold bg-white text-primary rounded-tl-full p-4 text-center align-middle">
+              <div className="absolute bottom-0 right-0 text-5xl font-bold bg-red-400 text-white rounded-tl-full p-4 text-center align-middle">
                 C
               </div>
             </div>
 
             <div className="relative h-24 bg-primary gap-4">
-              <div className="absolute text-5xl font-bold bottom-0 left-0 text-primary bg-white rounded-tr-full p-4 text-center align-middle">
+              <div className="absolute text-5xl font-bold bottom-0 left-0 bg-red-400 text-white rounded-tr-full p-4 text-center align-middle">
                 A
               </div>
 
@@ -163,7 +164,7 @@ export default function Page() {
             </div>
 
             <div className="relative bg-primary h-24 gap-4">
-              <div className="absolute right-0 top-0 font-bold text-5xl p-4 rounded-bl-full bg-white text-primary text-center align-middle">
+              <div className="absolute right-0 top-0 font-bold text-5xl p-4 rounded-bl-full bg-red-400 text-white text-center align-middle">
                 R
               </div>
 
@@ -174,7 +175,7 @@ export default function Page() {
             </div>
 
             <div className="relative bg-primary h-24 gap-4">
-              <div className="absolute left-0 top-0 font-bold text-5xl p-4 rounded-br-full bg-white text-primary text-center align-middle">
+              <div className="absolute left-0 top-0 font-bold text-5xl p-4 rounded-br-full bg-red-400 text-white text-center align-middle">
                 E
               </div>
               
@@ -188,6 +189,8 @@ export default function Page() {
           <div></div>
         </div>
       </div>
+
+      <Footer/>
     </main>
   );
 }
