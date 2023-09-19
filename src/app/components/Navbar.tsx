@@ -3,6 +3,8 @@
 import React, {FC, useState} from 'react'
 import {HiMenu} from 'react-icons/hi'
 import Link from 'next/link'
+import Image from 'next/image';
+
 const Navbar:FC = () => {
     
     const [hidden, setHidden] = useState<Boolean>(true)
@@ -25,6 +27,12 @@ const Navbar:FC = () => {
     <div 
     onClick={() => setHover(false)}
     className="z-20 p-4 sm:flex fixed hidden bg-white w-full shadow-md border-b-[4px] border-b-primary">
+        <Image 
+        src="public/images/Avisa-Logo.svg"
+        alt="Avisa"
+        width="50"
+        height="30"
+        />
         <ul className="flex text-sm font-semibold text-gray-500 mx-auto ">
             
             <Link href="/">
@@ -39,7 +47,7 @@ const Navbar:FC = () => {
             </li>
             </Link>
 
-            <Link href="/Contact">
+            <Link href="/contact">
             <li className="px-4 hover:text-black hover:cursor-pointer">
                 Contact
             </li>
@@ -115,7 +123,7 @@ const Navbar:FC = () => {
             </li>
             </Link>
 
-            <Link href="/Contact">
+            <Link href="/contact">
             <li className="px-4 hover:text-black hover:cursor-pointer text-secondary text-center py-2 border-b-[1px] border-primary/50">
                 Contact
             </li>
