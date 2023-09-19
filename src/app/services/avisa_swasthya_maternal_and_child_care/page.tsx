@@ -87,14 +87,14 @@ export default function Page() {
             Avisa, in collaboration with Medela Healthcare, is dedicated to
             improving maternal and child care by introducing a Vacuum Assisted
             Delivery (VAD) Machine. This innovative device assists healthcare
-            professionals in safe and effective childbirth. Avisa's VAD machine
+            professionals in safe and effective childbirth. Avisa&apos;s VAD machine
             is designed to provide controlled suction to aid in the delivery
             process, reducing maternal and fetal complications. By partnering
             with Medela Healthcare, Avisa ensures the availability of advanced
             medical equipment to healthcare facilities, promoting better
             outcomes for both mothers and babies. The VAD machine enhances
             obstetric care, allowing healthcare providers to manage complicated
-            deliveries with precision and improved safety. Avisa's commitment to
+            deliveries with precision and improved safety. Avisa&apos;s commitment to
             maternal and child care is evident through their efforts to
             introduce this cutting-edge technology.
           </div>
