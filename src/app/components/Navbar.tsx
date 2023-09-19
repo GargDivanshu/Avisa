@@ -15,10 +15,10 @@ const Navbar:FC = () => {
     const [hover, setHover] = useState(false);
 
     console.log(hover + " hover")
-    function MouseOver(event) {
+    function MouseOver(event: React.MouseEvent) {
         setHover(true)
       }
-      function MouseOut(event){
+      function MouseOut(event: React.MouseEvent){
         setHover(false)
       }
 

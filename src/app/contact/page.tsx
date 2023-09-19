@@ -6,12 +6,17 @@ import emailjs from '@emailjs/browser';
 
 
 export default function Page() {
-    const form = useRef();
+    const form = useRef<HTMLFormElement | null>(null);
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
   
-      emailjs.sendForm(`${process.env.SERVICE_KEY}`, `${process.env.TEMPLATE_ID}`, form.current, `${process.env.PUBLIC_KEY}`)
+      emailjs.sendForm(
+        `${process.env.SERVICE_KEY}`,
+        `${process.env.TEMPLATE_ID}`,
+        form.current?.form,
+        `${process.env.PUBLIC_KEY}`
+      )
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -33,7 +38,7 @@ export default function Page() {
         <form 
         className="p-4 text-2xl rounded-md md:w-4/5 w-11/12 shadow-md flex flex-col my-8 absolute top-24 bg-white"
         ref={form} onSubmit={sendEmail}>
-            <div classsName="grid justify-between">
+            <div className="grid justify-between">
       <label className="font-bold">Name</label>
       <input 
       className="border-[1px] rounded-full p-2"
