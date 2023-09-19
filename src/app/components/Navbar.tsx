@@ -26,14 +26,15 @@ const Navbar:FC = () => {
     <>
     <div 
     onClick={() => setHover(false)}
-    className="z-20 p-4 sm:flex fixed hidden bg-white w-full shadow-md border-b-[4px] border-b-primary">
+    className="z-20 sm:flex fixed hidden bg-white w-full shadow-md border-b-[4px] border-b-primary ">
         <Image 
-        src="public/images/Avisa-Logo.svg"
+        src="/images/Avisa-Logo.svg"
         alt="Avisa"
-        width="50"
+        width="55"
         height="30"
+        className="ml-8"
         />
-        <ul className="flex text-sm font-semibold text-gray-500 mx-auto ">
+        <ul className="flex text-sm font-semibold text-gray-500 mx-auto my-4">
             
             <Link href="/">
                 <li className="px-4 hover:text-black hover:cursor-pointer">
@@ -48,7 +49,7 @@ const Navbar:FC = () => {
             </Link>
 
             <Link href="/contact">
-            <li className="px-4 hover:text-black hover:cursor-pointer">
+            <li className="px-4 hover:text-black my-auto hover:cursor-pointer">
                 Contact
             </li>
             </Link>

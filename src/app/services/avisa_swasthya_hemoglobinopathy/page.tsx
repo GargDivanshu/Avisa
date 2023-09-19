@@ -40,7 +40,7 @@ export default function Page() {
           alt="What is Hemoglobinopathy"
           width="200"
           height="400"
-          className="mx-auto my-4 "
+          className="mx-auto my-4 floating"
         />
 
         <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
