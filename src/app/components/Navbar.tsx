@@ -63,9 +63,10 @@ const Navbar:FC = () => {
             </Link>
         </ul>
     </div>
+    <div className="w-1/4 h-fit mx-auto">
     <div 
     onMouseOver={MouseOver} onMouseOut={MouseOut}
-    className={`mx-auto z-10 fixed bg-white rounded-md p-4 mt-[60px] h-fit shadow-md w-[300px] ${(hover) ? "" : "hidden"}`}>
+    className={`mx-auto z-10 fixed bg-white rounded-md p-4 mt-[60px] h-fit shadow-md w-fit ${(hover) ? "" : "hidden"}`}>
         <div className="flex flex-col m-auto h-fit text-sm">
             <Link
             href="/services/avisa_swasthya_hemoglobinopathy"
@@ -91,6 +92,7 @@ const Navbar:FC = () => {
             </div>
             </Link>
         </div>
+    </div>
     </div>
 
     <div className="p-4 sm:hidden relative w-full">

@@ -31,7 +31,7 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-white md:h-[2300px] h-[3200px] mx-auto relative">
+    <div className="bg-white md:h-[2300px] h-[3200px] mx-auto relative flex flex-col">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
