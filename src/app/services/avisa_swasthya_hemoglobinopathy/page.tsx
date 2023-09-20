@@ -34,20 +34,20 @@ export default function Page() {
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
-      <div className="rounded-md shadow-md absolute top-24 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white">
-        <Image
+      <div className="rounded-md shadow-md absolute top-24 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white py-24">
+        {/* <Image
           src="/ques_mark.png"
           alt="What is Hemoglobinopathy"
           width="200"
           height="400"
           className="mx-auto my-4 floating"
-        />
+        /> */}
 
         <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
           What is Hemoglobinopathy?
         </div>
 
-        <div className="md:w-3/5 w-4/5 my-2 pb-8 border-b-[1px] border-primary mx-auto h-fit text-lg text-center">
+        <div className="md:w-3/5 w-4/5 my-2 pb-8 border-b-[1px] border-primary text-primary mx-auto h-fit text-lg text-center">
           Hemoglobinopathy refers to a group of genetic disorders that affect
           the structure or production of hemoglobin, the molecule responsible
           for carrying oxygen in red blood cells. These disorders include
@@ -66,7 +66,7 @@ export default function Page() {
           <div className="col-span-1 p-8">
             <Doughnut data={data} options={options} />
           </div>
-          <div>
+          <div className="justify-center">
             <div className="flex flex-col h-fit my-auto">
               <li className="text-xl font-bold py-4 my-auto">
                 Screening and Diagnosis

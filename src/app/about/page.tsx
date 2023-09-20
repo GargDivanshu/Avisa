@@ -1,12 +1,21 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Navbar from "./../components/Navbar";
 import { TbTargetArrow } from "react-icons/tb";
 import { SlBadge } from "react-icons/sl";
 import Footer from './../components/Footer';
 
+// type Props = {
+//   missionRef?: MutableRefObject<null>;
+//   careRef?: MutableRefObject<null>;
+// };
+
+
 export default function Page() {
+
+  const missionRef = useRef(null)
+  const careRef = useRef(null)
   // const useMouseMove = () => {
   //   useEffect(() => {
   //     const handleMouseMove = (e: MouseEventInit) => {
@@ -63,7 +72,7 @@ export default function Page() {
 
   return (
     <main className="bg-white relative flex min-h-screen flex-col items-center md:px-36 px-6 md:pb-36">
-      <Navbar />
+      <Navbar missionRef={missionRef} careRef={careRef}/>
       <div className="bg-transparent h-[100px]"></div>
       <div id="" className="md:mb-48 mb-96">
         <div className="grid md:grid-cols-2 grid-cols-1 my-4">
@@ -86,7 +95,9 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex md:flex-row flex-col text-sm my-12">
+        <div 
+        ref={missionRef}
+        className="flex md:flex-row flex-col text-sm py-6 my-6">
           <div className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
             <TbTargetArrow
               fontSize={75}
@@ -135,7 +146,9 @@ export default function Page() {
           </div>
         </div>
 
-        <div>
+        <div
+        ref={careRef}
+        >
           {/* laptop view */}
           <div className="mx-auto text-center text-4xl font-bold text-primary">
             Our Care System
