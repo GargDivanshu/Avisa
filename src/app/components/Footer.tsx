@@ -13,7 +13,7 @@ const Footer:FC = () => {
 
         </div>
 
-        <div className="text-white px-12 w-full h-[60px] p-2 bg-primary absolute bottom-0 flex flex-col md:flex-row justify-between text-center">
+        <div className="text-white px-12 w-full h-[60px] p-2 bg-primary absolute bottom-0 flex flex-col md:flex-row justify-around text-center">
          <span
          className="my-auto text-xs "
          >

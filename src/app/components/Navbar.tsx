@@ -241,44 +241,44 @@ const Navbar: FC = ({missionRef, careRef}) => {
         </div>
       </div> */}
 
-      <div className="p-4 sm:hidden relative w-full">
+      <div className="p-6 sm:hidden relative w-full">
         <HiMenu
           onClick={() => setHidden(!hidden)}
-          className="absolute left-0 top-0.5 text-black"
+          className="absolute -left-4 top-1 text-black z-30"
           fontSize={32}
         />
         <div
-          className={`rounded-r-md shadow-lg bg-white z-20 mt-8 absolute min-h-screen w-4/5 ease-in-out duration-500 ${
-            hidden ? "-translate-x-96" : "-translate-x-28"
+          className={`rounded-r-md h-fit shadow-lg bg-white z-20 mt-8 absolute w-full ease-in-out duration-500 ${
+            hidden ? "-translate-y-96  shadow-none" : "-translate-y-28"
           }`}
         >
           <ul className="flex flex-col mt-16 text-sm font-semibold">
             <Link href="/">
-              <li className="px-4 hover:text-black hover:cursor-pointer text-secondary text-center py-2 border-y-[1px] border-primary/50">
+              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
                 Home
               </li>
             </Link>
 
             <Link href="/about">
-              <li className="px-4 hover:text-black hover:cursor-pointer text-secondary text-center py-2 border-b-[1px] border-primary/50">
+              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
                 About
               </li>
             </Link>
 
             <Link href="/Services">
-              <li className="px-4 hover:text-black hover:cursor-pointer text-secondary text-center py-2 border-b-[1px] border-primary/50">
+              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
                 Services
               </li>
             </Link>
 
             <Link href="/contact">
-              <li className="px-4 hover:text-black hover:cursor-pointer text-secondary text-center py-2 border-b-[1px] border-primary/50">
+              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
                 Contact
               </li>
             </Link>
 
             <Link href="/team">
-              <li className="px-4 hover:text-black hover:cursor-pointer text-secondary text-center py-2 border-b-[1px] border-primary/50">
+              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-t-[1px] border-gray-500">
                 Team
               </li>
             </Link>

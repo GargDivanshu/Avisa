@@ -5,7 +5,8 @@ import Navbar from "./../components/Navbar";
 import { TbTargetArrow } from "react-icons/tb";
 import { SlBadge } from "react-icons/sl";
 import Footer from './../components/Footer';
-
+import {motion} from 'framer-motion'
+import {fadeIn, staggerContainer, textVariant} from './../utils/motion'
 // type Props = {
 //   missionRef?: MutableRefObject<null>;
 //   careRef?: MutableRefObject<null>;
@@ -75,7 +76,12 @@ export default function Page() {
       <Navbar missionRef={missionRef} careRef={careRef}/>
       <div className="bg-transparent h-[100px]"></div>
       <div id="" className="md:mb-48 mb-96">
-        <div className="grid md:grid-cols-2 grid-cols-1 my-4">
+        <motion.div 
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        // viewport={{ once: false, amount: 0.25 }}
+        className="grid md:grid-cols-2 grid-cols-1 my-4">
           <Image
             alt="Avisa Logo"
             src="/images/Avisa-Logo.svg"
@@ -84,7 +90,9 @@ export default function Page() {
             className=" border-r-[1px] border-primary text-primary"
           />
 
-          <div className="h-fit my-auto text-center font-bold text-gray-500 align-middle">
+          <motion.div 
+          variants={fadeIn('up', 'tween', 0.1, 0.9)}
+          className="h-fit my-auto text-center font-bold text-gray-500 align-middle">
             At Avisa Swasthya, we are dedicated to transforming healthcare
             through innovation and compassion. With our advanced diagnostic
             solutions, we ensure accurate and accessible testing for all. From
@@ -92,13 +100,18 @@ export default function Page() {
             community outreach, our mission is to empower individuals, families,
             and communities with personalized healthcare solutions for a
             healthier future.
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div 
+        <motion.div 
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
         ref={missionRef}
         className="flex md:flex-row flex-col text-sm py-6 my-6">
-          <div className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+          <motion.div 
+          variants={fadeIn('up', 'tween', 0.1, 0.9)}
+          className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
             <TbTargetArrow
               fontSize={75}
               className="mx-auto mb-4 text-primary"
@@ -110,9 +123,11 @@ export default function Page() {
             diseases, even in the remotest part of India. Our mission is to
             eradicate genetic diseases and reducing maternal mortality, enabling
             safe childbirth across the nation.&quot;
-          </div>
+          </motion.div>
 
-          <div className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+          <motion.div 
+          variants={fadeIn('up', 'tween', 0.1, 0.9)}
+          className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
             <SlBadge fontSize={75} className="mx-auto mb-4 text-primary" />
             <span className="text-lg font-bold text-primary">Vision</span>
             &quot;Our vision aligns with the nation&apos;s goal to transform
@@ -121,8 +136,8 @@ export default function Page() {
             quality medical services are within the reach of every individual.
             In the coming years, Avisa Swasthya strives to be the cornerstone of
             change in the Indian healthcare landscape.&quot;
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <div className=" p-8">
           <div className="mx-auto text-center text-4xl font-bold text-primary">
@@ -135,12 +150,18 @@ export default function Page() {
                 <div className="text-6xl text-center font-bold md:my-auto text-primary col-span-1">
                   {item.char}
                 </div>
-                <div className="flex flex-col p-4 font-semibold col-span-9">
+                <motion.div 
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                className="flex flex-col p-4 font-semibold col-span-9">
                   <div className="text-primary">{item.word}</div>
-                  <div className="text-gray-500 font-normal text-sm">
+                  <motion.div 
+                  variants={fadeIn('up', 'tween', 0.1, 0.9)}
+                  className="text-gray-500 font-normal text-sm">
                     {item.desc}
-                  </div>
-                </div>
+                  </motion.div>
+                </motion.div>
               </div>
             ))}
           </div>
