@@ -220,7 +220,54 @@ export default function Page() {
           </div>
 
           {/* mobile view */}
-          <div></div>
+          <div className="sm:hidden grid grid-cols-1 my-16">
+
+            <div className="flex flex-col w-10/12 mx-auto my-4">
+               <div className="bg-red-400 text-white text-center text-6xl py-4">
+                C
+               </div>
+
+               <div className="text-white bg-primary text-xl p-4 text-center">
+               Community participation in society at large.
+               </div>
+            </div>
+
+
+            <div className="flex flex-col w-10/12 mx-auto my-4">
+               <div className="bg-red-400 text-white text-center text-6xl py-4">
+                A
+               </div>
+
+               <div className="text-white bg-primary text-xl p-4 text-center">
+               Adequate deployment of products with latest technology.
+               </div>
+            </div>
+
+
+            <div className="flex flex-col w-10/12 mx-auto my-4">
+               <div className="bg-red-400 text-white text-center text-6xl py-4">
+                R
+               </div>
+
+               <div className="text-white bg-primary text-xl p-4 text-center">
+               Reduce gap between awareness Equal opportunities for one and
+                all. & practice.
+               </div>
+            </div>
+
+
+            <div className="flex flex-col w-10/12 mx-auto my-4">
+               <div className="bg-red-400 text-white text-center text-6xl py-4">
+                E
+               </div>
+
+               <div className="text-white bg-primary text-xl p-4 text-center">
+               Equal opportunities for one and all.
+               </div>
+            </div>
+
+
+          </div>
         </div>
       </div>
 
