@@ -101,7 +101,7 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
           height="75"
           className="mx-auto my-4"
           />
-        Avisa Swasthya Maternal and Child Care 
+        Avisa Swasthya Maternal<br/> and Child Care 
         </div>
         </Link>
 
