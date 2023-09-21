@@ -254,7 +254,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
         >
           <ul className="flex flex-col mt-16 font-semibold">
             <Link href="/">
-              <li className="shadow-lg shadow-primary p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Home
               </li>
             </Link>
