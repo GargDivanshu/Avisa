@@ -56,7 +56,7 @@ export default function Page() {
           </div>
           <div>
             <div className="flex flex-col h-fit my-auto">
-              <div className="text-xl font-bold py-4 my-auto">
+              <div className="text-center text-xl font-bold py-4 my-auto">
                 Vacuum Assisted Delivery Machine
               </div>
 

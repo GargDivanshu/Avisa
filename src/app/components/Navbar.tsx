@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation'
 import { HiMenu } from "react-icons/hi";
 import Link from "next/link";
 import Image from "next/image";
+import {MdKeyboardArrowDown, MdKeyboardArrowUp} from 'react-icons/md'
+
 
 const Navbar: FC = ({missionRef, careRef}) => {
 
@@ -24,6 +26,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
 
   const handleMissionClick = () => {
     router.push('/about');
+    setHidden(false)
     // if (missionRef) {
     //   missionRef.current.scrollIntoView({ behavior: 'smooth' });
     // }
@@ -31,6 +34,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
 
   const handleCareClick = () => {
     router.push('/about')
+    setHidden(false)
   }
 
 
@@ -76,6 +80,13 @@ const Navbar: FC = ({missionRef, careRef}) => {
     setHoverServices(false);
     setShowDropdown(false);
   };
+
+  const closeNav = () => {
+    setHidden(false)
+  }
+
+  const [mobileAbout, setMobileAbout] = useState(false);
+  const [mobileServices, setMobileServices] = useState(false);
 
   return (
     <>
@@ -241,11 +252,19 @@ const Navbar: FC = ({missionRef, careRef}) => {
         </div>
       </div> */}
 
-      <div className="p-6 sm:hidden relative w-full">
+      <div className="p-6 py-1 sm:hidden relative w-full justify-evenly">
         <HiMenu
           onClick={() => setHidden(!hidden)}
           className="absolute -left-4 top-1 text-black z-30"
           fontSize={32}
+        />
+
+        <Image
+        src="/Avisa-Logo-noname.svg"
+        width="90"
+        height="70"
+        alt="Avisa" 
+        className="mx-auto"
         />
         <div
           className={`rounded-r-md h-fit mx-auto left-0 right-0 shadow-lg bg-white z-20 mt-8 absolute w-fit ease-in-out duration-500 ${
@@ -253,20 +272,44 @@ const Navbar: FC = ({missionRef, careRef}) => {
           }`}
         >
           <ul className="flex flex-col mt-16 font-semibold">
-            <Link href="/">
+            <Link 
+            onClick={closeNav}
+            href="/">
               <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Home
               </li>
             </Link>
 
            
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center">
-                About
+              <li 
+              onClick={() => setMobileAbout(!mobileAbout)}
+              className={`
+              ${(!mobileAbout) ? "" : "border-b-[2px] border-primary"}
+              shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center flex`}>
+                <p
+                className="w-5/6"
+                >About</p>
+
+                {
+                  (mobileAbout) ? 
+                  <MdKeyboardArrowDown
+                fontSize={25}
+                className="w-1/6 text-primary"
+                />
+                : 
+                <MdKeyboardArrowUp
+                fontSize={25}
+                className="w-1/6 text-primary"
+                />
+                }
               </li>
+              
+              <div className={`${(mobileAbout)  ? ("") : ("hidden")}`}>          
                <Link
                href="/about"
+               onClick={closeNav}
                >
-               <li className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
+               <li className={`p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center`}>
                 About Us
               </li>
                </Link>
@@ -277,9 +320,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
                className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center">
                 Care Guidelines
               </li>
-             
-
-               
+            
                <li 
                onClick={handleMissionClick}
                className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
@@ -289,43 +330,76 @@ const Navbar: FC = ({missionRef, careRef}) => {
 
                <Link
                href="/team"
+               onClick={closeNav}
                >
                <li className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
                Our Team
               </li>
                </Link>
-
+               </div>
           
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center">
-                Services
+              <li 
+              onClick={() => setMobileServices(!mobileServices)}
+              className={`
+              ${(!mobileServices) ? "" : "border-b-[2px] border-primary"}
+              shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center flex`}>
+                <p
+                className="w-5/6"
+                >Services</p>
+                {
+                  (mobileServices) ? 
+                  <MdKeyboardArrowDown
+                fontSize={25}
+                className="w-1/6 text-primary"
+                />
+                : 
+                <MdKeyboardArrowUp
+                fontSize={25}
+                className="w-1/6 text-primary"
+                />
+                }
               </li>
 
-              <Link href="/services/avisa_swasthya_hemoglobinopathy">
+              <div 
+              className={(mobileServices) ? "" : "hidden"}
+              >
+              <Link 
+              onClick={closeNav}
+              href="/services/avisa_swasthya_hemoglobinopathy">
               <div className="hover:bg-black/10 text-gray-500 text-center rounded-md p-2 text-sm cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Hemoglobinopathy
               </div>
             </Link>
 
-            <Link href="/services/avisa_swasthya_maternal_and_child_care">
+            <Link 
+            onClick={closeNav}
+            href="/services/avisa_swasthya_maternal_and_child_care">
               <div className="p-2 text-gray-500 rounded-md text-center hover:bg-black/10 text-sm cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Maternal and Child Care
               </div>
             </Link>
 
-            <Link href="/services/avisa_swasthya_awareness">
+            <Link 
+            onClick={closeNav}
+            href="/services/avisa_swasthya_awareness">
               <div className="p-2 text-center text-sm text-gray-500 hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Awareness
               </div>
             </Link>
+            </div>
            
 
-            <Link href="/contact">
+            <Link 
+            onClick={closeNav}
+            href="/contact">
               <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Contact
               </li>
             </Link>
 
-            <Link href="/information_center">
+            <Link 
+            onClick={closeNav}
+            href="/information_center">
               <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Information Center
               </li>

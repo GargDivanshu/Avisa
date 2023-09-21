@@ -30,7 +30,7 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-white md:h-[3100px] h-[4200px] mx-auto relative">
+    <div className="bg-white md:h-[3100px] h-[4600px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
@@ -81,7 +81,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4">
+        <div className="w-4/5 text-3xl text-center text-primary font-bold mx-auto py-4">
           Screening and Diagnosis (Sickle Cell, Thalassemia (gazelle) and Anemia
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">

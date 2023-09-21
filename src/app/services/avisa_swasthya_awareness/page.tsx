@@ -74,7 +74,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4">
+        <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Health Education
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 px-16">
