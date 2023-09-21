@@ -151,8 +151,8 @@ const Navbar: FC = ({missionRef, careRef}) => {
             
               <li 
               onClick={handleMissionClick}
-              className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in">Mission,Vision,Values</li>
-         
+              className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">Mission,Vision,Values</li>
+          
               <Link href="/team"><li className="rounded-md hover:bg-black/10 hover:text-black hover:cursor-pointer p-4 duration-100 ease-in text-left border-b-[1px] ">Our Team</li></Link>
             </ul>
           )}

@@ -47,7 +47,7 @@ export default function Home() {
   }, [CarouselData, img, text]);
   
   return (
-    <main className="bg-white relative flex min-h-screen md:h-[1500px] h-[2200px] flex-col items-center md:px-24 px-6">
+    <main className="bg-white relative flex min-h-screen md:h-[1800px] h-[2200px] flex-col items-center md:px-24 px-6">
       <Navbar/>
 
       <div className="bg-transparent md:h-[62px] ">
