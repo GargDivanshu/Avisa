@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 
 const About: FC = () => {
   return (
-    <div className="shadow-md rounded-md md:w-3/4 w-full flex flex-col justify-center text-center h-screen">
+    <div className="shadow-md rounded-md md:w-full w-full flex flex-col justify-center text-center">
 
 <motion.div 
 variants={staggerContainer}
@@ -28,6 +28,7 @@ className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary">
       // viewport={{ once: false, amount: 0.1 }}
       className="md:text-3xl text-2xl font-bold h-fit my-auto text-primary">
         <motion.p
+        className="py-8"
         // variants={fadeIn('up', 'tween', 0.2, 1)}
         >Who We Are ?
         </motion.p></motion.div>
@@ -83,7 +84,7 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
           height="75"
           className="mx-auto my-4 "
           />
-        Avisa Swasthya Hemoglobinopathy
+        Avisa Swasthya<br/> Hemoglobinopathy
         </div>
         </Link>
 

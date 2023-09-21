@@ -53,13 +53,13 @@ export default function Home() {
       <div className="bg-transparent md:h-[62px] ">
       </div>
       
-      <div className={`relative md:w-full w-11/12 md:h-[500px] h-[500px] ${img} object-scale-down md:object-cover mb-36`}>
+      <div className={`relative md:w-full w-11/12 md:h-[500px] h-[500px] ${img} object-scale-down md:object-cover md:mb-4 mb-64`}>
       <motion.div 
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="container rounded-lg absolute top-0 bottom-0 left-0 right-0 m-auto w-4/5 h-3/5 bg-white/50">
+      className="container rounded-lg absolute top-0 bottom-0 left-0 right-0 m-auto w-4/5 h-fit bg-white/50">
       <motion.span
       variants={textVariant(1.1)}
       className="md:text-3xl text-xl font-bold text-center h-fit absolute top-0 bottom-0 left-0 right-0 m-auto"
