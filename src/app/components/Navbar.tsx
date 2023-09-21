@@ -252,10 +252,10 @@ const Navbar: FC = ({missionRef, careRef}) => {
         </div>
       </div> */}
 
-      <div className="p-6 py-1 sm:hidden relative w-full justify-evenly">
+      <div className="p-6 py-1 sm:hidden fixed w-full justify-evenly z-30 bg-white shadow-lg ">
         <HiMenu
           onClick={() => setHidden(!hidden)}
-          className="absolute -left-4 top-1 text-black z-30"
+          className="absolute  top-0 bottom-0 my-auto text-black z-30"
           fontSize={32}
         />
 
@@ -267,8 +267,8 @@ const Navbar: FC = ({missionRef, careRef}) => {
         className="mx-auto"
         />
         <div
-          className={`rounded-r-md h-fit mx-auto left-0 right-0 shadow-lg bg-white z-20 mt-8 absolute w-fit ease-in-out duration-500 ${
-            hidden ? "-translate-y-[900px] shadow-none" : "-translate-y-28"
+          className={`rounded-r-md w-full h-fit mx-auto left-0 right-0 shadow-lg bg-white z-20 mt-8 absolute w-fit ease-in-out duration-500 ${
+            hidden ? "-translate-y-[900px] shadow-none" : "-translate-y-36"
           }`}
         >
           <ul className="flex flex-col mt-16 font-semibold">
@@ -287,19 +287,19 @@ const Navbar: FC = ({missionRef, careRef}) => {
               ${(!mobileAbout) ? "" : "border-b-[2px] border-primary"}
               shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center flex`}>
                 <p
-                className="w-5/6"
+                className="mx-auto"
                 >About</p>
 
                 {
                   (mobileAbout) ? 
                   <MdKeyboardArrowDown
                 fontSize={25}
-                className="w-1/6 text-primary"
+                className=" text-primary"
                 />
                 : 
                 <MdKeyboardArrowUp
                 fontSize={25}
-                className="w-1/6 text-primary"
+                className=" text-primary"
                 />
                 }
               </li>
@@ -344,18 +344,18 @@ const Navbar: FC = ({missionRef, careRef}) => {
               ${(!mobileServices) ? "" : "border-b-[2px] border-primary"}
               shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center flex`}>
                 <p
-                className="w-5/6"
+                className="mx-auto"
                 >Services</p>
                 {
                   (mobileServices) ? 
                   <MdKeyboardArrowDown
                 fontSize={25}
-                className="w-1/6 text-primary"
+                className=" text-primary"
                 />
                 : 
                 <MdKeyboardArrowUp
                 fontSize={25}
-                className="w-1/6 text-primary"
+                className="text-primary"
                 />
                 }
               </li>
