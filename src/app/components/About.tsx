@@ -13,7 +13,7 @@ variants={staggerContainer}
 initial="hidden"
 whileInView="show"
 // viewport={{ once: false, amount: 0.1 }}
-className="md:text-5xl sm:text-3xl font-bold h-fit my-auto text-primary">
+className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary">
   <motion.p
   // variants={fadeIn('up', 'tween', 0.2, 1)}
   >
@@ -26,7 +26,7 @@ className="md:text-5xl sm:text-3xl font-bold h-fit my-auto text-primary">
       initial="hidden"
       whileInView="show"
       // viewport={{ once: false, amount: 0.1 }}
-      className="md:text-3xl sm:text-xl font-bold h-fit my-auto text-primary">
+      className="md:text-3xl text-2xl font-bold h-fit my-auto text-primary">
         <motion.p
         // variants={fadeIn('up', 'tween', 0.2, 1)}
         >Who We Are ?
@@ -58,7 +58,7 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
       initial="hidden"
       whileInView="show"
       // viewport={{ once: false, amount: 0.1 }}
-      className="text-center md:text-3xl sm:text-xl  text-primary font-bold col-span-4 py-4">
+      className="text-center md:text-3xl text-2xl  text-primary font-bold col-span-4 py-4">
         <motion.p
       //  variants={fadeIn('up', 'tween', 0.2, 1)}
         >OUR SERVICES</motion.p>
@@ -118,6 +118,9 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
           />
         Avisa Swasthya Health and Care Camps
         </div>
+        <Link
+        href="/services/avisa_swasthya_awareness"
+        >
         <div 
         // variants={fadeIn('up', 'tween', 0.1, 0.9)}
         className="bg-primary/80 p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
@@ -128,8 +131,9 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
           height="75"
           className="mx-auto my-4"
           />
-        Avisa Swasthya Awareness
+        Avisa Swasthya <br/> Awareness
         </div>
+        </Link>
       </motion.div>
     </div>
   );

@@ -249,37 +249,85 @@ const Navbar: FC = ({missionRef, careRef}) => {
         />
         <div
           className={`rounded-r-md h-fit shadow-lg bg-white z-20 mt-8 absolute w-full ease-in-out duration-500 ${
-            hidden ? "-translate-y-96  shadow-none" : "-translate-y-28"
+            hidden ? "-translate-y-[900px]  shadow-none" : "-translate-y-28"
           }`}
         >
-          <ul className="flex flex-col mt-16 text-sm font-semibold">
+          <ul className="flex flex-col mt-16 font-semibold">
             <Link href="/">
-              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Home
               </li>
             </Link>
 
-            <Link href="/about">
-              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
+           
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center">
                 About
               </li>
-            </Link>
+               <Link
+               href="/about"
+               >
+               <li className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
+                About Us
+              </li>
+               </Link>
 
-            <Link href="/Services">
-              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
+               
+               <li 
+               onClick={handleCareClick}
+               className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center">
+                Care Guidelines
+              </li>
+             
+
+               
+               <li 
+               onClick={handleMissionClick}
+               className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
+               Mission,Vision,Values
+              </li>
+               
+
+               <Link
+               href="/team"
+               >
+               <li className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
+               Our Team
+              </li>
+               </Link>
+
+          
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center">
                 Services
               </li>
+
+              <Link href="/services/avisa_swasthya_hemoglobinopathy">
+              <div className="hover:bg-black/10 text-gray-500 text-center rounded-md p-2 text-sm cursor-pointer duration-100 ease-in">
+                Avisa Swasthya Hemoglobinopathy
+              </div>
             </Link>
 
+            <Link href="/services/avisa_swasthya_maternal_and_child_care">
+              <div className="p-2 text-gray-500 rounded-md text-center hover:bg-black/10 text-sm cursor-pointer duration-100 ease-in">
+                Avisa Swasthya Maternal and Child Care
+              </div>
+            </Link>
+
+            <Link href="/services/avisa_swasthya_awareness">
+              <div className="p-2 text-center text-sm text-gray-500 hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
+                Avisa Swasthya Awareness
+              </div>
+            </Link>
+           
+
             <Link href="/contact">
-              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-b-[1px] border-gray-500">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Contact
               </li>
             </Link>
 
-            <Link href="/team">
-              <li className="p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center border-t-[1px] border-gray-500">
-                Team
+            <Link href="/information_center">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+                Information Center
               </li>
             </Link>
           </ul>

@@ -50,10 +50,10 @@ export default function Home() {
     <main className="bg-white relative flex min-h-screen md:h-[1500px] h-[2200px] flex-col items-center md:px-24 px-6">
       <Navbar/>
 
-      <div className="bg-transparent h-[62px]">
+      <div className="bg-transparent md:h-[62px] ">
       </div>
       
-      <div className={`relative md:w-full w-11/12 md:h-[500px] h-screen ${img} object-scale-down md:object-cover mb-8`}>
+      <div className={`relative md:w-full w-11/12 md:h-[500px] h-[500px] ${img} object-scale-down md:object-cover mb-36`}>
       <motion.div 
       variants={staggerContainer}
       initial="hidden"
