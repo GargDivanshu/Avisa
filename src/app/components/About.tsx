@@ -93,7 +93,7 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
         >
         <div 
         // variants={fadeIn('up', 'tween', 0.1, 0.9)}
-        className="bg-primary/90 p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
+        className="bg-[#C44D4F] p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
         <Image 
           src="/2.png"
           alt="Avisa Swasthya Hemoglobinopathy"
@@ -109,7 +109,7 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
 
         <div 
         // variants={fadeIn('up', 'tween', 0.1, 0.9)}
-        className="bg-primary/70 p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
+        className="bg-[#CB6163] p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
         <Image 
           src="/4.png"
           alt="Avisa Swasthya Hemoglobinopathy"
@@ -124,7 +124,7 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
         >
         <div 
         // variants={fadeIn('up', 'tween', 0.1, 0.9)}
-        className="bg-primary/80 p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
+        className="bg-[#D17576] p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
         <Image 
           src="/3.png"
           alt="Avisa Swasthya Hemoglobinopathy"
