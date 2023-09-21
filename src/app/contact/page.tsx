@@ -75,7 +75,7 @@ export default function Page() {
       name="message" />
       </div>
       
-      <input className="text-white w-fit text-center text-sm p-2 rounded-md bg-primary hover:bg-primary/50 font-bold" type="submit" value="Send" />
+      <input className="text-white w-fit px-8 text-sm text-center py-2 rounded-md bg-primary hover:bg-primary/50 font-bold" type="submit" value="Send" />
                 </div>
       </div>
 
