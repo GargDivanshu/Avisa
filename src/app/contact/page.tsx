@@ -24,7 +24,7 @@ export default function Page() {
         });
     };
     return (
-        <main className="bg-white relative flex h-[980px] flex-col items-center  md:pb-36">
+        <main className="bg-white relative flex h-[980px] flex-col items-center md:pb-36">
         <Navbar/>
         <div className="md:mt-[50px]">
         </div>
@@ -32,23 +32,55 @@ export default function Page() {
         <div className="w-full h-[200px] bg-[url('/banner.jpg')]">
 
         </div>
-        <div className="md:text-left text-center md:text-3xl text-xl text-primary">
+       
+        <form 
+        className="md:p-8 p-4 text-2xl rounded-md md:w-4/5 w-11/12 shadow-md flex flex-col my-8 absolute top-24 bg-white"
+        ref={form} onSubmit={sendEmail}>
+
+<div className="font-semibold text-left md:text-3xl text-xl text-primary">
             Contact Us
         </div>
-        <form 
-        className="p-4 text-2xl rounded-md md:w-4/5 w-11/12 shadow-md flex flex-col my-8 absolute top-24 bg-white"
-        ref={form} onSubmit={sendEmail}>
-            <div className="grid justify-between">
-      <label className="font-bold">Name</label>
+
+        <div className="text-center font-semibold">
+            Feel free to get in touch with us
+        </div>
+            <div className="grid justify-between md:grid-cols-2 grid-cols-1">
+
+                <div>
+
+                    Address
+                </div>
+                
+                <div className="flex flex-col">
+                <div className="my-4 flex flex-col">
+      <label className="font-semibold text-sm text-gray-500">Name</label>
       <input 
-      className="border-[1px] rounded-full p-2"
+      className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
       type="text" name="user_name" />
       </div>
-      <label className="font-bold">Email</label>
-      <input type="email" name="user_email" />
-      <label className="font-bold">Message</label>
-      <textarea name="message" />
-      <input className="w-4/5 text-center mx-auto p-2 rounded-full bg-primary hover:bg-primary/50 font-bold" type="submit" value="Send" />
+
+      <div className="my-4 flex flex-col">
+      <label className="font-semibold text-sm text-gray-500">Email</label>
+      <input 
+      className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
+      type="email" name="user_email" />
+      </div>
+
+      <div className="my-4 flex flex-col">
+      <label 
+      className="font-semibold text-sm text-gray-500"
+      >Message</label>
+      <textarea 
+       className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
+      name="message" />
+      </div>
+      
+      <input className="text-white w-fit text-center text-sm p-2 rounded-md bg-primary hover:bg-primary/50 font-bold" type="submit" value="Send" />
+                </div>
+      </div>
+
+      
+      
     </form>
         <Footer/>
         </main>

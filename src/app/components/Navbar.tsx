@@ -248,8 +248,8 @@ const Navbar: FC = ({missionRef, careRef}) => {
           fontSize={32}
         />
         <div
-          className={`rounded-r-md h-fit shadow-lg bg-white z-20 mt-8 absolute w-full ease-in-out duration-500 ${
-            hidden ? "-translate-y-[900px]  shadow-none" : "-translate-y-28"
+          className={`rounded-r-md h-fit mx-auto left-0 right-0 shadow-lg bg-white z-20 mt-8 absolute w-fit ease-in-out duration-500 ${
+            hidden ? "-translate-y-[900px] shadow-none" : "-translate-y-28"
           }`}
         >
           <ul className="flex flex-col mt-16 font-semibold">
