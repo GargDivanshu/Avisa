@@ -154,7 +154,7 @@ export default function Page() {
                 variants={staggerContainer}
                 initial="hidden"
                 whileInView="show"
-                className="flex flex-col p-4 font-semibold col-span-9">
+                className="flex flex-col p-4 font-semibold col-span-9 pl-0">
                   <div className="text-primary">{item.word}</div>
                   <motion.div 
                   variants={fadeIn('up', 'tween', 0.1, 0.9)}
@@ -172,7 +172,7 @@ export default function Page() {
         >
           {/* laptop view */}
           <div className="mx-auto text-center text-4xl font-bold text-primary">
-            Our Care System
+            Our Care Guidelines
           </div>
 
 

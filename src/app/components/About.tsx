@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 
 const About: FC = () => {
   return (
-    <div className="shadow-md rounded-md md:w-full w-full flex flex-col justify-center text-center">
+    <div className="text-black shadow-md rounded-md md:w-full w-full flex flex-col justify-center text-center">
 
 <motion.div 
 variants={staggerContainer}
@@ -106,7 +106,9 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
         </Link>
 
 
-
+        <Link
+        href="/services/avisa_swasthya_heath_and_care_camps"
+        >
         <div 
         // variants={fadeIn('up', 'tween', 0.1, 0.9)}
         className="bg-[#CB6163] p-4 flex flex-col py-8 hover:transform hover:scale-y-110 hover:scale-x-110 hover:transform-origin-bottom duration-500">
@@ -119,6 +121,8 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
           />
         Avisa Swasthya Health and Care Camps
         </div>
+        </Link>
+        
         <Link
         href="/services/avisa_swasthya_awareness"
         >
