@@ -87,11 +87,11 @@ health for different ages and communities. Our aim is to make more
 people aware of how to prevent illnesses, manage diseases, and live
 healthily. Our programs, led by our knowledgeable healthcare team,
 include workshops, talks, and interactive sessions. We also believe in
-the importance of research to make healthcare better. We're teaming
+the importance of research to make healthcare better. We&apos;re teaming
 up with respected medical institutions and experts to improve medical
 knowledge, find new ways of treating health issues, and tackle common
-community health problems. At Avisa Swasthya, we're here to promote
-health awareness and drive important research for a healthier future."
+community health problems. At Avisa Swasthya, we&apos;re here to promote
+health awareness and drive important research for a healthier future.&quot;
         </div>
 
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
@@ -113,7 +113,7 @@ timely intervention and personalized care
             </p>
 
             <p className="py-2">
-              3) Our team of skilled healthcare professionals doesn't stop at diagnosis.
+              3) Our team of skilled healthcare professionals doesn&apos;t stop at diagnosis.
 We provide expert-led awareness sessions and counseling during these
 camps, ensuring participants understand the implications of
 hemoglobin-related conditions and guiding them toward informed
