@@ -47,6 +47,7 @@ export default function Page() {
         </div>
 
         */}
+
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center">
           Avisa Swasthya Maternal and Child Care
         </div>
@@ -79,34 +80,96 @@ export default function Page() {
           </div>
         </div>
 
-        {/* <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
-          Vacuum Assisted Delivery Machine
-        </div> */}
+        <div className="md:w-3/5 w-4/5 my-2 pb-8 border-b-[1px] border-primary text-primary mx-auto h-fit text-lg text-center">
+        Our main goal is to help people lead healthier lives by providing useful
+information. We&apos;re dedicated to creating educational programs about
+health for different ages and communities. Our aim is to make more
+people aware of how to prevent illnesses, manage diseases, and live
+healthily. Our programs, led by our knowledgeable healthcare team,
+include workshops, talks, and interactive sessions. We also believe in
+the importance of research to make healthcare better. We're teaming
+up with respected medical institutions and experts to improve medical
+knowledge, find new ways of treating health issues, and tackle common
+community health problems. At Avisa Swasthya, we're here to promote
+health awareness and drive important research for a healthier future."
+        </div>
+
+        <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
+          Sickle Cell and Thalassemia Diagnosis
+        </div>
         <div className="grid md:grid-cols-2 grid-cols-1 px-16">
           <div className="col-span-1 p-4">
-          Avisa Swasthya is committed to equitable healthcare access. We organize
-general health check-up camps in regions lacking proper medical facilities,
-ensuring that even underprivileged communities receive essential
-healthcare services.
+          <p className="py-2">
+              1) We regularly organize health check-up camps in targeted regions,
+specifically designed to identify and prevent hemoglobin-related
+diseases such as sickle cell anemia and thalassemia.
+            </p>
+
+            <p className="py-2">
+              2) Our camps prioritize early detection as a cornerstone of preventive
+healthcare. By offering accessible and free screenings, we empower
+individuals to identify hemoglobin disorders at an early stage, enabling
+timely intervention and personalized care
+            </p>
+
+            <p className="py-2">
+              3) Our team of skilled healthcare professionals doesn't stop at diagnosis.
+We provide expert-led awareness sessions and counseling during these
+camps, ensuring participants understand the implications of
+hemoglobin-related conditions and guiding them toward informed
+healthcare decisions.
+            </p>
+
+            <p className="py-2">
+              4) We actively contribute to community health improvement. By detecting
+and preventing hemoglobin-related diseases, we work toward healthier
+futures, fostering well-being, and reducing the burden of these
+conditions on individuals and families.
+
+            </p>
           </div>
         </div>
 
-        {/* <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
-          Prenatal Care
-        </div> */}
+        <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
+          General Health Camps
+        </div>
         <div className="grid md:grid-cols-2 grid-cols-1 px-16">
           <div>some image</div>
           <div className="col-span-1 p-4 ">
-          Our camps aim to bridge the healthcare gap by providing comprehensive
+          <p className="py-2">
+              1) Avisa Swasthya is committed to equitable healthcare access. We organize
+general health check-up camps in regions lacking proper medical facilities,
+ensuring that even underprivileged communities receive essential
+healthcare services.
+            </p>
+
+            <p className="py-2">
+              2) Our camps aim to bridge the healthcare gap by providing comprehensive
 check-ups to individuals who might otherwise have limited access to
 medical attention.
+
+            </p>
+
+            <p className="py-2">
+              3) Beyond diagnosing health issues, our camps focus on preventive care. We
+offer screenings, consultations, and health education to empower
+participants with knowledge about maintaining well-being and making
+informed lifestyle choices.
+            </p>
+
+            <p className="py-2">
+              4) By conducting general health check-up camps in underserved areas, we
+contribute to the overall health and vitality of underprivileged individuals,
+fostering a healthier and more resilient community.
+
+            </p>
           </div>
         </div>
 
         {/* <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
         Counseling for Genetic Diseases
         </div> */}
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
+        {/* <div className="grid md:grid-cols-2 grid-cols-1 px-16">
           <div className="col-span-1 p-4">
           Beyond diagnosing health issues, our camps focus on preventive care. We
 offer screenings, consultations, and health education to empower
@@ -115,20 +178,20 @@ informed lifestyle choices.
 
           </div>
           <div>some image</div>
-        </div>
+        </div> */}
 
 
         {/* <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
         Postnatal Care 
         </div> */}
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
+        {/* <div className="grid md:grid-cols-2 grid-cols-1 px-16">
           <div>some image</div>
           <div className="col-span-1 p-4 ">
           By conducting general health check-up camps in underserved areas, we
 contribute to the overall health and vitality of underprivileged individuals,
 fostering a healthier and more resilient community.
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
         Antenatal Care

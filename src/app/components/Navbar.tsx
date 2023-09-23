@@ -12,17 +12,17 @@ const Navbar: FC = ({missionRef, careRef}) => {
 
   const router = useRouter();
   // const missionRef = useRef(null);
-  useEffect(() => {
-    if (missionRef) {
-      missionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [missionRef]);
+  // useEffect(() => {
+  //   if (missionRef) {
+  //     missionRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }, [missionRef]);
 
-  useEffect(() => {
-    if(careRef) {
-      careRef.current.scrollIntoView({behavior: 'smooth'});
-    }
-  }, [careRef])
+  // useEffect(() => {
+  //   if(careRef) {
+  //     careRef.current.scrollIntoView({behavior: 'smooth'});
+  //   }
+  // }, [careRef])
 
   const handleMissionClick = () => {
     router.push('/about');
@@ -123,6 +123,10 @@ const Navbar: FC = ({missionRef, careRef}) => {
           Services
         </li>
 
+        <Link href="/information_center">
+            <li className="px-4 hover:text-black hover:cursor-pointer">Information Center</li>
+          </Link>
+
           <Link href="/contact">
             <li className="px-4 hover:text-black my-auto hover:cursor-pointer">
               Contact
@@ -136,9 +140,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
 
           {/* </Link> */}
 
-          <Link href="/information_center">
-            <li className="px-4 hover:text-black hover:cursor-pointer">Information Center</li>
-          </Link>
+        
         </ul>
       </div>
       <div 
@@ -155,16 +157,22 @@ const Navbar: FC = ({missionRef, careRef}) => {
               href="/about"
               >
               <li className="w-3/4 text-left mx-auto hover:text-black rounded-md hover:bg-black/10 p-1 duration-100 ease-in">About Us</li></Link>
+              <Link
+              href="/about/care_guidelines"
+              >
               <li 
-              onClick={handleCareClick}
               className="w-3/4 text-left mx-auto hover:text-black rounded-md hover:bg-black/10 p-1 duration-100 ease-in">Care Guidelines</li>
+              </Link>
               </div>
             
+            <Link
+            href="/about/mission_vision_values"
+            >
               <li 
-              onClick={handleMissionClick}
               className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">Mission,Vision,Values</li>
+              </Link>
           
-              <Link href="/team"><li className="rounded-md hover:bg-black/10 hover:text-black hover:cursor-pointer p-4 duration-100 ease-in text-left border-b-[1px] ">Our Team</li></Link>
+              <Link href="/about/team"><li className="rounded-md hover:bg-black/10 hover:text-black hover:cursor-pointer p-4 duration-100 ease-in text-left border-b-[1px] ">Our Team</li></Link>
             </ul>
           )}
           {hoverServices && (
@@ -178,6 +186,12 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link href="/services/avisa_swasthya_maternal_and_child_care">
               <div className="p-4 border-b-[1px] rounded-md hover:bg-black/10 cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Maternal and Child Care
+              </div>
+            </Link>
+
+            <Link href="/services/avisa_swasthya_health_and_care_camps">
+              <div className="hover:bg-black/10 rounded-md p-4 border-b-[1px] cursor-pointer duration-100 ease-in">
+                Avisa Swasthya Health and Care Camp
               </div>
             </Link>
 
@@ -314,22 +328,28 @@ const Navbar: FC = ({missionRef, careRef}) => {
               </li>
                </Link>
 
-               
+               <Link
+              href="/about/care_guidelines"
+              >
                <li 
-               onClick={handleCareClick}
                className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center">
                 Care Guidelines
               </li>
+              </Link>
             
+
+            <Link
+            href="/about/mission_vision_values"
+            >
                <li 
-               onClick={handleMissionClick}
                className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
                Mission,Vision,Values
               </li>
+              </Link>
                
 
                <Link
-               href="/team"
+               href="/about/team"
                onClick={closeNav}
                >
                <li className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
@@ -386,22 +406,30 @@ const Navbar: FC = ({missionRef, careRef}) => {
                 Avisa Swasthya Awareness
               </div>
             </Link>
-            </div>
-           
 
             <Link 
             onClick={closeNav}
-            href="/contact">
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
-                Contact
-              </li>
+            href="/services/avisa_swasthya_health_and_care_camps">
+              <div className="p-2 text-center text-sm text-gray-500 hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
+                Avisa Swasthya Health and Care Camp
+              </div>
             </Link>
+            </div>
+          
 
             <Link 
             onClick={closeNav}
             href="/information_center">
               <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Information Center
+              </li>
+            </Link>
+
+            <Link 
+            onClick={closeNav}
+            href="/contact">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+                Contact
               </li>
             </Link>
           </ul>

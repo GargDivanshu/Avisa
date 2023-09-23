@@ -13,9 +13,9 @@ export default function Page() {
     datasets: [
       {
         // label: '# of Votes',
-        data: [25, 25, 25, 25],
+        data: [33, 33, 33],
         backgroundColor: [
-          "rgb(190, 58, 60, 1)",
+          // "rgb(190, 58, 60, 1)",
           "rgb(190, 58, 60, 0.8)",
           "rgb(190, 58, 60, 0.6)",
           "rgb(190, 58, 60, 0.4)",
@@ -31,7 +31,7 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-white md:h-[2300px] h-[3800px] mx-auto relative flex flex-col">
+    <div className="bg-white md:h-[2600px] h-[3900px] mx-auto relative flex flex-col">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
@@ -59,9 +59,9 @@ export default function Page() {
                 Health Education
               </div>
 
-              <div className="text-xl font-bold py-4 my-auto">
+              {/* <div className="text-xl font-bold py-4 my-auto">
                 Health Check-up Camps
-              </div>
+              </div> */}
 
               <div className="text-xl font-bold py-4 my-auto">
                 Health Research
@@ -74,33 +74,38 @@ export default function Page() {
           </div>
         </div>
 
+        {/* <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
+          What is Hemoglobinopathy?
+        </div> */}
+
+        <div className="md:w-3/5 w-4/5 my-2 pb-8 border-b-[1px] border-primary text-primary mx-auto h-fit text-lg text-center">
+        Our main goal is to help people lead healthier lives by providing useful information. We&apos;re dedicated to creating
+        educational programs about health for different ages and communities. Our aim is to make more people aware of how to prevent 
+        illnesses, manage diseases, and live healthily. Our programs, led by our knowledgeable healthcare team, include workshops, talks, and interactive sessions. We also believe in the importance of research to make healthcare better. We&apos;re teaming up with respected medical institutions and experts to improve medical knowledge, find new ways of treating health issues, and tackle common community health problems. At Avisa Swasthya, we&apos;re here to promote health awareness and drive important research for a healthier future.&quot;
+        </div>
+
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Health Education
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 px-16">
           <div className="col-span-1 p-4">
-            Avisa Swasthya is dedicated to providing health education through
-            various initiatives. We will develop comprehensive health education
-            programs, targeting different age groups and communities, to promote
-            awareness about preventive healthcare, disease management, and
-            healthy lifestyle practices. These programs will include workshops,
-            seminars, and interactive sessions conducted by our knowledgeable
-            healthcare professionals.
-          </div>
-        </div>
+          <p className="py-2">
+              1) Avisa Swasthya is dedicated to providing health education through various
+initiatives
+            </p>
 
-        <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
-          Health Check-up Camps
-        </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
-          <div>some image</div>
-          <div className="col-span-1 p-4 ">
-            As part of our community outreach, we will organize health check-up
-            camps in collaboration with local communities. These camps will
-            serve as a platform to provide free or affordable health screenings,
-            consultations, and basic health assessments. Our team of healthcare
-            experts will be present to conduct thorough check-ups, offer medical
-            advice, and address any health concerns of the participants.
+            <p className="py-2">
+              2) We will develop comprehensive health education programs, targeting
+different age groups and communities, to promote awareness about
+preventive healthcare, disease management, and healthy lifestyle
+practices.
+
+            </p>
+
+            <p className="py-2">
+              3) These programs will include workshops, seminars, and interactive sessions
+conducted by our knowledgeable healthcare professionals.
+            </p>
           </div>
         </div>
 
@@ -108,14 +113,51 @@ export default function Page() {
           Health Research
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 px-16">
+          <div>some image</div>
+          <div className="col-span-1 p-4 ">
+          <p className="py-2">
+              1) At Avisa Swasthya, we understand the importance of continuous research
+in improving healthcare outcomes.
+            </p>
+
+            <p className="py-2">
+              2) We will actively engage in health research by collaborating with renowned
+medical institutions, researchers, and experts.
+
+            </p>
+
+            <p className="py-2">
+              3) Our research efforts will focus on contributing to advancements in
+healthcare knowledge, exploring innovative treatment approaches, and
+addressing prevalent health issues in the community.
+
+            </p>
+          </div>
+        </div>
+
+        <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
+        Health Infomatics
+        </div>
+        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
           <div className="col-span-1 p-4">
-            At Avisa Swasthya, we understand the importance of continuous
-            research in improving healthcare outcomes. We will actively engage
-            in health research by collaborating with renowned medical
-            institutions, researchers, and experts. Our research efforts will
-            focus on contributing to advancements in healthcare knowledge,
-            exploring innovative treatment approaches, and addressing prevalent
-            health issues in the community.
+          <p className="py-2">
+              1) Avisa Swasthya is dedicated to providing health education through various
+initiatives.
+            </p>
+
+            <p className="py-2">
+              2) We will develop comprehensive health education programs, targeting
+different age groups and communities, to promote awareness about
+preventive healthcare, disease management, and healthy lifestyle
+practices
+
+            </p>
+
+            <p className="py-2">
+              3) These programs will include workshops, seminars, and interactive sessions
+conducted by our knowledgeable healthcare professionals.
+
+            </p>
           </div>
           <div>some image</div>
         </div>
@@ -140,7 +182,7 @@ export default function Page() {
           </div>
         </div> */}
 
-        <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
+        {/* <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
         Health Informatics
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 px-16">
@@ -149,7 +191,7 @@ export default function Page() {
 
           </div>
           <div>some image</div>
-        </div>
+        </div> */}
       </div>
 
       <Footer/>

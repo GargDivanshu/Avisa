@@ -30,7 +30,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[3100px] h-[4600px] mx-auto relative">
+    <div className="text-black bg-white md:h-[3300px] h-[4600px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
@@ -82,25 +82,23 @@ export default function Page() {
         </div>
 
         <div className="w-4/5 text-3xl text-center text-primary font-bold mx-auto py-4">
-          Screening and Diagnosis (Sickle Cell, Thalassemia (gazelle) and Anemia
+          Screening and Diagnosis 
+          {/* (Sickle Cell, Thalassemia (gazelle) and Anemia */}
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
           <div className="col-span-1 p-4">
             <p className="py-2">
-              1) Introducing <strong>Gazelle</strong>, our cutting-edge
-              high-tech diagnosis machine designed to test for Hemoglobinopathy
-              diseases like Sickle Cell and beta thalassemia. With its advanced
-              AI and Machine Learning capabilities, Gazelle delivers accurate
-              and precise results, revolutionizing the diagnostic process.
+              1) Our cutting-edge diagnosis machine is designed to test for Hemoglobinopathy diseases like Sickle Cell
+and beta thalassemia. With its advanced AI and Machine Learning capabilities, it delivers accurate and
+precise results, revolutionizing the diagnostic process.
+
             </p>
 
             <p className="py-2">
-              2) Gazelle aims to make diagnosis accessible and affordable for
-              all, ensuring that individuals and communities have access to
-              crucial information about their health. By leveraging AI and
-              Machine Learning algorithms, Gazelle analyzes genetic markers and
-              provides comprehensive reports that aid in the early detection and
-              management of Hemoglobinopathy diseases.
+              2) It aims to make diagnosis accessible and affordable for all, ensuring that individuals and communities
+have access to crucial information about their health. By leveraging AI and Machine Learning algorithms, it
+analyzes genetic markers and provides comprehensive reports that aid in the early detection and
+management of Hemoglobinopathy diseases.
             </p>
 
             <p className="py-2">
@@ -131,17 +129,35 @@ export default function Page() {
                 some image
             </div>
           <div className="col-span-1 p-4 ">
-            Avisa will play a crucial role in providing counseling and guidance
-            for individuals with hemoglobinopathy diseases. They offer
-            specialized services to educate patients and their families about
-            the condition, its symptoms, and treatment options. Avisa&apos;s team of
-            experts provide personalized counseling sessions to address the
-            emotional and psychological aspects of living with
-            hemoglobinopathies. They offer guidance on managing symptoms,
-            promoting healthy lifestyles, and navigating the healthcare system.
-            Avisa also works closely with healthcare professionals to ensure
-            comprehensive care and support for individuals affected by
-            hemoglobinopathies.
+          <p className="py-2">
+              1) Avisa will play a crucial role in providing counseling and guidance for
+individuals with hemoglobinopathy diseases.
+
+            </p>
+
+            <p className="py-2">
+              2) They offer specialized services to educate patients and their families
+about the condition, its symptoms, and treatment options.
+
+            </p>
+
+            <p className="py-2">
+              3) Avisa&apos;s team of experts provide personalized counseling sessions to
+address the emotional and psychological aspects of living with
+hemoglobinopathies.
+            </p>
+
+            <p className="py-2">
+              4) They offer guidance on managing symptoms, promoting healthy
+lifestyles, and navigating the healthcare system.
+
+            </p>
+
+            <p className="py-2">5) Avisa also works closely with healthcare professionals to ensure
+comprehensive care and support for individuals affected by
+hemoglobinopathies.
+
+            </p>
           </div>
         </div>
 
@@ -150,9 +166,41 @@ export default function Page() {
           Treatment
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
-          <div className="col-span-1 p-4">
-          Avisa is dedicated to advancing the treatment of hemoglobinopathy diseases. They invest in research and development to develop innovative therapies specifically tailored for these conditions. Avisa collaborates with healthcare professionals and experts in the field to design effective treatment protocols. They provide access to cutting-edge medications and therapies that target the underlying mechanisms of hemoglobinopathies. Avisa also offers patient support programs to ensure adherence to treatment plans and provide resources for managing potential side effects. Through their commitment to improving treatment options, Avisa aims to enhance the quality of life for individuals with hemoglobinopathies.
-          </div>
+          <div>
+        <p className="py-2">
+              1) Avisa is dedicated to advancing the treatment of hemoglobinopathy
+diseases.
+
+            </p>
+
+            <p className="py-2">
+              2) They invest in research and development to develop innovative therapies
+specifically tailored for these conditions.
+
+            </p>
+
+            <p className="py-2">
+              3) Avisa collaborates with healthcare professionals and experts in the field to
+design effective treatment protocols
+            </p>
+
+            <p className="py-2">
+              4) They provide access to cutting-edge medications and therapies that target
+the underlying mechanisms of hemoglobinopathies.
+
+            </p>
+
+            <p className="py-2">5) Avisa also offers patient support programs to ensure adherence to
+treatment plans and provide resources for managing potential side effects.
+
+            </p>
+
+            <p className="py-2">
+            6) Through their commitment to improving treatment options, Avisa aims to
+enhance the quality of life for individuals with hemoglobinopathies.
+            </p>
+            </div>
+
           <div>
                 some image
             </div>

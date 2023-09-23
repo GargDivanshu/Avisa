@@ -107,7 +107,7 @@ At Avisa Swasthya, we are dedicated to transforming healthcare through
 
 
         <Link
-        href="/services/avisa_swasthya_heath_and_care_camps"
+        href="/services/avisa_swasthya_health_and_care_camps"
         >
         <div 
         // variants={fadeIn('up', 'tween', 0.1, 0.9)}

@@ -1,12 +1,12 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import Navbar from "./../components/Navbar";
+import Navbar from "./../../components/Navbar";
 import { TbTargetArrow } from "react-icons/tb";
 import { SlBadge } from "react-icons/sl";
-import Footer from './../components/Footer';
+import Footer from './../../components/Footer';
 import {motion} from 'framer-motion'
-import {fadeIn, staggerContainer, textVariant} from './../utils/motion'
+import {fadeIn, staggerContainer, textVariant} from './../../utils/motion'
 // type Props = {
 //   missionRef?: MutableRefObject<null>;
 //   careRef?: MutableRefObject<null>;
@@ -15,8 +15,6 @@ import {fadeIn, staggerContainer, textVariant} from './../utils/motion'
 
 export default function Page() {
 
-  const missionRef = useRef(null)
-  const careRef = useRef(null)
   // const useMouseMove = () => {
   //   useEffect(() => {
   //     const handleMouseMove = (e: MouseEventInit) => {
@@ -73,9 +71,10 @@ export default function Page() {
 
   return (
     <main className="bg-white relative flex min-h-screen flex-col items-center md:px-36 px-6 md:pb-36">
-      <Navbar missionRef={missionRef} careRef={careRef}/>
+      <Navbar />
       <div className="bg-transparent h-[100px]"></div>
-      <div id="" className="md:mb-48 mb-96">
+      <div id="" className="md:mb-48 mb-96 w-11/12">
+      {/* 
         <motion.div 
         variants={staggerContainer}
         initial="hidden"
@@ -103,13 +102,13 @@ export default function Page() {
           </motion.div>
         </motion.div>
 
-        {/* <motion.div 
+        <motion.div 
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         ref={missionRef}
-        className="flex md:flex-row flex-col text-sm py-6 my-6"> */}
-          {/* <motion.div 
+        className="flex md:flex-row flex-col text-sm py-6 my-6">
+          <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
           className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
             <TbTargetArrow
@@ -123,9 +122,9 @@ export default function Page() {
             diseases, even in the remotest part of India. Our mission is to
             eradicate genetic diseases and reducing maternal mortality, enabling
             safe childbirth across the nation.&quot;
-          </motion.div> */}
+          </motion.div>
 
-          {/* <motion.div 
+          <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
           className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
             <SlBadge fontSize={75} className="mx-auto mb-4 text-primary" />
@@ -136,15 +135,15 @@ export default function Page() {
             quality medical services are within the reach of every individual.
             In the coming years, Avisa Swasthya strives to be the cornerstone of
             change in the Indian healthcare landscape.&quot;
-          </motion.div> */}
-        {/* </motion.div> */}
+          </motion.div>
+        </motion.div>
 
-        {/* <div className=" p-8">
+        <div className=" p-8">
           <div className="mx-auto text-center text-4xl font-bold text-primary">
             Our Values
-          </div> */}
+          </div>
 
-          {/* <div className="flex flex-col">
+          <div className="flex flex-col">
             {Values.map((item) => (
               <div key={item.id} className="grid w-4/5 mx-auto grid-cols-10">
                 <div className="text-6xl text-center font-bold md:my-auto text-primary col-span-1">
@@ -164,14 +163,14 @@ export default function Page() {
                 </motion.div>
               </div>
             ))}
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div> */}
 
-        {/* <div
-        ref={careRef}
-        > */}
+        <div
+        // ref={careRef}
+        >
           {/* laptop view */}
-          {/* <div className="mx-auto text-center text-4xl font-bold text-primary">
+          <div className="mx-auto text-center text-4xl font-bold text-primary">
             Our Care Guidelines
           </div>
 
@@ -217,10 +216,10 @@ export default function Page() {
               Equal opportunities for one and all.
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* mobile view */}
-          {/* <div className="sm:hidden grid grid-cols-1 my-16">
+          <div className="sm:hidden grid grid-cols-1 my-16">
 
             <div className="flex flex-col w-10/12 mx-auto my-4">
                <div className="bg-red-400 text-white text-center text-6xl py-4">
@@ -267,8 +266,8 @@ export default function Page() {
             </div>
 
 
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div>
       </div>
 
       <Footer/>
