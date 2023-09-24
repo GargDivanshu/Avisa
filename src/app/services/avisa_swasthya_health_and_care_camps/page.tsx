@@ -49,7 +49,7 @@ export default function Page() {
         */}
 
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center">
-          Avisa Swasthya Maternal and Child Care
+          Avisa Swasthya Haelth and Maternal Camp
         </div>
         <div className="w-3/5 h-fit mx-auto my-16 grid md:grid-cols-2 grid-cols-1 border-b-[1px] border-primary">
           <div className="col-span-1 p-8">
@@ -57,25 +57,25 @@ export default function Page() {
           </div>
           <div>
             <div className="flex flex-col h-fit my-auto">
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Vacuum Assisted Delivery Machine
-              </div>
+              </li>
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Prenatal Care
-              </div>
+              </li>
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Counseling for Genetic Diseases
-              </div>
+              </li>
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Postnatal Care
-              </div>
+              </li>
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Antenatal Care
-              </div>
+              </li>
             </div>
           </div>
         </div>
@@ -97,8 +97,8 @@ health awareness and drive important research for a healthier future.&quot;
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Sickle Cell and Thalassemia Diagnosis
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
-          <div className="col-span-1 p-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
+          <div className="col-span-1 p-2">
           <p className="py-2">
               1) We regularly organize health check-up camps in targeted regions,
 specifically designed to identify and prevent hemoglobin-related
@@ -133,9 +133,9 @@ conditions on individuals and families.
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           General Health Camps
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
           <div>some image</div>
-          <div className="col-span-1 p-4 ">
+          <div className="col-span-1 p-2 ">
           <p className="py-2">
               1) Avisa Swasthya is committed to equitable healthcare access. We organize
 general health check-up camps in regions lacking proper medical facilities,

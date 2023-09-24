@@ -6,7 +6,7 @@ import Footer from './../../components/Footer';
 
 export default function Page() {
     return (
-        <main className="text-black bg-white relative flex min-h-screen h-[2500px] md:h-[1200px] flex-col items-center md:px-24 px-6">
+        <main className="text-black bg-white relative flex min-h-screen h-[2650px] md:h-[1200px] flex-col items-center md:px-24 px-6">
             <Navbar/>
             <div className="bg-gradient-to-tr from-slate-500 to-stone-700">
             <div className="w-screen filter mix-blend-overlay bg-cover relative bg-[url('./../../public/banner.jpg')] object-cover h-[100px] md:h-[200px]">
@@ -29,9 +29,9 @@ export default function Page() {
                         />
 
                         <span className="text-xl">
-                            Name
+                        Umesh Tulsyan
                         </span>
-                        <p className="text-sm font-normal">Some Designation</p>
+                        <p className="text-sm font-normal">MD & CEO</p>
 
                         <div className="flex mt-4">
                             <AiFillLinkedin 
@@ -56,37 +56,9 @@ export default function Page() {
                         />
 
                         <span className="text-xl">
-                            Name
+                        Nidhi Tulsyan
                         </span>
-                        <p className="text-sm font-normal">Some Designation</p>
-
-                        <div className="flex mt-4">
-                            <AiFillLinkedin 
-                            fontSize={35}
-                            className="mr-2 text-[#0072B1] hover:text-[#0072B1]/50 hover:cursor-pointer"
-                            />
-                            <AiOutlineMail 
-                            fontSize={35}
-                            className="ml-2 text-[#E34133] hover:text-[#E34133]/50 hover:cursor-pointer"
-                            />
-                        </div>
-                        </div>
-
-
-
-                        <div>
-                        <Image 
-                        src="/profile.png"
-                        alt="profile"
-                        height="200"
-                        width="200"
-                        className=""
-                        />
-
-                        <span className="text-xl">
-                            Name
-                        </span>
-                        <p className="text-sm font-normal">Some Designation</p>
+                        <p className="text-sm font-normal">Director</p>
 
                         <div className="flex mt-4">
                             <AiFillLinkedin 
@@ -112,9 +84,9 @@ export default function Page() {
                         />
 
                         <span className="text-xl">
-                            Name
+                        Renu Jalan
                         </span>
-                        <p className="text-sm font-normal">Some Designation</p>
+                        <p className="text-sm font-normal">Director</p>
 
                         <div className="flex mt-4">
                             <AiFillLinkedin 
@@ -140,9 +112,37 @@ export default function Page() {
                         />
 
                         <span className="text-xl">
-                            Name
+                        Dr. Sonia Tuteja
                         </span>
-                        <p className="text-sm font-normal">Some Designation</p>
+                        <p className="text-sm font-normal">Head - Research and Development</p>
+
+                        <div className="flex mt-4">
+                            <AiFillLinkedin 
+                            fontSize={35}
+                            className="mr-2 text-[#0072B1] hover:text-[#0072B1]/50 hover:cursor-pointer"
+                            />
+                            <AiOutlineMail 
+                            fontSize={35}
+                            className="ml-2 text-[#E34133] hover:text-[#E34133]/50 hover:cursor-pointer"
+                            />
+                        </div>
+                        </div>
+
+
+
+                        <div>
+                        <Image 
+                        src="/profile.png"
+                        alt="profile"
+                        height="200"
+                        width="200"
+                        className=""
+                        />
+
+                        <span className="text-xl">
+                        Shivam Vats
+                        </span>
+                        <p className="text-sm font-normal">Head - Sales</p>
 
                         <div className="flex mt-4">
                             <AiFillLinkedin 
@@ -167,9 +167,9 @@ export default function Page() {
                         />
 
                         <span className="text-xl">
-                            Name
+                        Isha Edema
                         </span>
-                        <p className="text-sm font-normal">Some Designation</p>
+                        <p className="text-sm font-normal">Head - Business Development</p>
 
                         <div className="flex mt-4">
                             <AiFillLinkedin 
@@ -183,7 +183,7 @@ export default function Page() {
                         </div>
                         </div>
 
-
+{/* 
                         <div>
                         <Image 
                         src="/profile.png"
@@ -208,7 +208,7 @@ export default function Page() {
                             className="ml-2 text-[#E34133] hover:text-[#E34133]/50 hover:cursor-pointer"
                             />
                         </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[3300px] h-[4600px] mx-auto relative">
+    <div className="text-black bg-white md:h-[3300px] h-[4900px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
@@ -43,11 +43,11 @@ export default function Page() {
           className="mx-auto my-4 floating"
         /> */}
 
-        <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
+        <div className="mx-auto md:w-2/5 w-4/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
           What is Hemoglobinopathy?
         </div>
 
-        <div className="md:w-3/5 w-4/5 my-2 pb-8 border-b-[1px] border-primary text-primary mx-auto h-fit text-lg text-center">
+        <div className="md:w-3/5 w-4/5 my-8 pb-8 border-b-[1px] border-primary text-primary mx-auto h-fit text-lg text-center">
           Hemoglobinopathy refers to a group of genetic disorders that affect
           the structure or production of hemoglobin, the molecule responsible
           for carrying oxygen in red blood cells. These disorders include
@@ -86,7 +86,7 @@ export default function Page() {
           {/* (Sickle Cell, Thalassemia (gazelle) and Anemia */}
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
-          <div className="col-span-1 p-4">
+          <div className="col-span-1 p-2">
             <p className="py-2">
               1) Our cutting-edge diagnosis machine is designed to test for Hemoglobinopathy diseases like Sickle Cell
 and beta thalassemia. With its advanced AI and Machine Learning capabilities, it delivers accurate and
@@ -128,7 +128,7 @@ management of Hemoglobinopathy diseases.
             <div>
                 some image
             </div>
-          <div className="col-span-1 p-4 ">
+          <div className="col-span-1 p-2">
           <p className="py-2">
               1) Avisa will play a crucial role in providing counseling and guidance for
 individuals with hemoglobinopathy diseases.
@@ -166,7 +166,7 @@ hemoglobinopathies.
           Treatment
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
-          <div>
+          <div  className="col-span-1 p-2">
         <p className="py-2">
               1) Avisa is dedicated to advancing the treatment of hemoglobinopathy
 diseases.

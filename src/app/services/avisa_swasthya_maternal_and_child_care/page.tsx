@@ -32,7 +32,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[3300px] h-[5500px] mx-auto relative">
+    <div className="text-black bg-white md:h-[3300px] h-[4900px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
@@ -56,25 +56,25 @@ export default function Page() {
           </div>
           <div>
             <div className="flex flex-col h-fit my-auto">
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Vacuum Assisted Delivery Machine
-              </div>
+              </li>
 
-              <div className="text-xl font-bold py-4 my-auto">
-                Prenatal Care
-              </div>
+              <li className="text-xl font-bold py-4 my-auto">
+                Prenatal Care 
+              </li>
 
               {/* <div className="text-xl font-bold py-4 my-auto">
                 Counseling for Genetic Diseases
               </div> */}
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Antenatal Care
-              </div>
+              </li>
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Postnatal Care
-              </div>
+              </li>
 
               
             </div>
@@ -84,8 +84,8 @@ export default function Page() {
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Vacuum Assisted Delivery Machine
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
-          <div className="col-span-1 p-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
+          <div className="col-span-1 p-2">
             <p className="py-2">
               1) Avisa is dedicated to improving maternal and child care by
               introducing a Vacuum Assisted Delivery (VAD) Machine.
@@ -122,9 +122,9 @@ export default function Page() {
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Prenatal Care
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
           <div>some image</div>
-          <div className="col-span-1 p-4">
+          <div className="col-span-1 p-2">
             <p className="py-2">
               1) Avisa Swasthya is dedicated to providing comprehensive prenatal
               care with a focus on preventive measures and early intervention.
@@ -158,8 +158,8 @@ export default function Page() {
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Antenatal Care
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
-          <div className="col-span-1 p-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
+          <div className="col-span-1 p-2">
             <p className="py-2">
               1) At Avisa Swasthya, we will be at the forefront of providing
               comprehensive antenatal care to support the health and well-being
@@ -206,9 +206,9 @@ export default function Page() {
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Postnatal Care
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
           <div>some image</div>
-          <div className="col-span-1 p-4">
+          <div className="col-span-1 p-2">
             <p className="py-2">
               1) At Avisa Swasthya, we are committed to providing comprehensive
 postnatal care to support the well-being of both mother and child.

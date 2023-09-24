@@ -31,7 +31,7 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-white md:h-[2600px] h-[3900px] mx-auto relative flex flex-col">
+    <div className="bg-white md:h-[2600px] h-[3700px] mx-auto relative flex flex-col">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
@@ -55,21 +55,21 @@ export default function Page() {
           </div>
           <div>
             <div className="flex flex-col h-fit my-auto">
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Health Education
-              </div>
+              </li>
 
               {/* <div className="text-xl font-bold py-4 my-auto">
                 Health Check-up Camps
               </div> */}
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
                 Health Research
-              </div>
+              </li>
 
-              <div className="text-xl font-bold py-4 my-auto">
+              <li className="text-xl font-bold py-4 my-auto">
               Health Informatics
-              </div>
+              </li>
             </div>
           </div>
         </div>
@@ -87,8 +87,8 @@ export default function Page() {
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Health Education
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
-          <div className="col-span-1 p-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
+          <div className="col-span-1 p-2">
           <p className="py-2">
               1) Avisa Swasthya is dedicated to providing health education through various
 initiatives
@@ -112,9 +112,9 @@ conducted by our knowledgeable healthcare professionals.
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Health Research
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
           <div>some image</div>
-          <div className="col-span-1 p-4 ">
+          <div className="col-span-1 p-2 ">
           <p className="py-2">
               1) At Avisa Swasthya, we understand the importance of continuous research
 in improving healthcare outcomes.
@@ -138,8 +138,8 @@ addressing prevalent health issues in the community.
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
         Health Infomatics
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-16">
-          <div className="col-span-1 p-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
+          <div className="col-span-1 p-2">
           <p className="py-2">
               1) Avisa Swasthya is dedicated to providing health education through various
 initiatives.
