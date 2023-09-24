@@ -93,10 +93,10 @@ export default function Home() {
       </div>
       <About />
 
-      <div>
-        <h1
+      <div className="my-8">
+        {/* <h1
          className="md:text-3xl text-center my-4 py-8 text-2xl font-bold h-fit my-auto text-primary"
-        >Information Center</h1>
+        >Information Center</h1> */}
 
         <iframe
           height="260"
