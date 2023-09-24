@@ -49,7 +49,7 @@ export default function Page() {
         */}
 
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center">
-          Avisa Swasthya Haelth and Maternal Camp
+          Avisa Swasthya Health and Maternal Camp
         </div>
         <div className="w-3/5 h-fit mx-auto my-16 grid md:grid-cols-2 grid-cols-1 border-b-[1px] border-primary">
           <div className="col-span-1 p-8">
