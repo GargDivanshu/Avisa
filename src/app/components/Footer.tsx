@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
+import Link from 'next/link';
 
 const Footer: FC = () => {
   return (
@@ -11,25 +12,58 @@ const Footer: FC = () => {
         <div className="flex text-center flex-col">
           <div className="text-xl text-primary font-bold py-2">About</div>
 
+          <Link
+          href="/about"
+          >
           <div className="py-1">About Us</div>
+          </Link>
 
+          <Link 
+          href="/about/care_guidelines"
+          >
           <div className="py-1">Care Guidelines</div>
+          </Link>
 
+          <Link 
+          href="/about/mission_vision_values"
+          >
           <div className="py-1">Mission, Vision, Values</div>
+          </Link>
 
+          <Link
+          href="/about/team"
+          >
           <div className="py-1">Our Team</div>
+          </Link>
         </div>
 
         <div className="flex text-center flex-col">
           <div className="text-xl text-primary font-bold py-2">Services</div>
 
+          <Link
+          href="/services/avisa_swasthya_hemoglobinopathy"
+          >
           <div className="py-1">Avisa Swasthya Hemoglobinopathy</div>
+          </Link>
 
+          <Link
+          href="/services/avisa_swasthya_maternal_and_child_care"
+          >
           <div className="py-1">Avisa Swasthya Maternal and Child Care</div>
+          </Link>
 
+
+          <Link
+          href="/services/avisa_swasthya_awareness"
+          >
           <div className="py-1">Avisa Swasthya Awareness</div>
+          </Link>
 
+          <Link
+          href="/services/avisa_swasthya_health_and_care_camps"
+          >
           <div className="py-1">Avisa Swasthya Health and Care Camp</div>
+          </Link>
         </div>
 
         <div className="relative flex text-center flex-col">
