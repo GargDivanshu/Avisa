@@ -318,7 +318,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
                 }
               </li>
               
-              <div className={`${(mobileAbout)  ? ("") : ("hidden")}`}>          
+              <div className={`${(mobileAbout)  ? ("ease-linear duration-900 transition bg-[#F4F4F4]") : ("ease-linear duration-900 transition hidden")}`}>          
                <Link
                href="/about"
                onClick={closeNav}
@@ -381,7 +381,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
               </li>
 
               <div 
-              className={(mobileServices) ? "" : "hidden"}
+              className={(mobileServices) ? "ease-linear duration-900 transition bg-[#F4F4F4]" : "hidden ease-linear duration-900 transition"}
               >
               <Link 
               onClick={closeNav}

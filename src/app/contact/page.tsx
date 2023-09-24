@@ -12,17 +12,22 @@ export default function Page() {
       e.preventDefault();
   
       emailjs.sendForm(
-        `${process.env.SERVICE_KEY}`,
-        `${process.env.TEMPLATE_ID}`,
-        form.current?.form,
-        `${process.env.PUBLIC_KEY}`
+        `service_i985a1p`,
+        `template_71xf235`,
+        form.current,
+        `gAsIlrWbzAgFRwRq1`
+        // 0FVkLr5G4IySvS8P4
       )
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
+      .then((result) => {
+        console.log(result.text);
+        console.log('successful');
+        window.location.reload();
+    }, (error) => {
+        console.log(error.text);
+        console.log('unsuccessful');
+        alert('some erro')
+    });
+};
     return (
         <main className="text-black bg-white relative flex h-[1380px] flex-col items-center md:pb-36">
         <Navbar/>
@@ -35,7 +40,7 @@ export default function Page() {
        
         <form 
         className="md:p-8 p-4 text-2xl rounded-md md:w-4/5 w-11/12 shadow-md flex flex-col my-8 absolute top-24 bg-white"
-        ref={form} onSubmit={sendEmail}>
+        ref={form} onSubmit={sendEmail} >
 
 <div className="font-semibold text-left md:text-3xl text-xl text-primary">
             Contact Us
