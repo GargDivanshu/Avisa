@@ -133,6 +133,12 @@ const Navbar: FC = ({missionRef, careRef}) => {
             </li>
           </Link>
 
+          <Link href="/career">
+            <li className="px-4 hover:text-black my-auto hover:cursor-pointer">
+              Careers
+            </li>
+          </Link>
+
           {/* <Link 
             
             // onMouseOut={MouseOut}
@@ -430,6 +436,14 @@ const Navbar: FC = ({missionRef, careRef}) => {
             href="/contact">
               <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
                 Contact
+              </li>
+            </Link>
+
+            <Link 
+            onClick={closeNav}
+            href="/career">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+                Career
               </li>
             </Link>
           </ul>

@@ -66,6 +66,22 @@ const Footer: FC = () => {
           </Link>
         </div>
 
+        <div className="flex text-center flex-col">
+        <Link
+          href="/career"
+          >
+          <div className="text-xl text-primary font-bold py-2">Join Us!</div>
+        </Link>
+
+        
+          <Link
+          href="/career"
+          >
+          <div className="py-1">Career</div>
+          </Link>
+        </div>
+
+
         <div className="relative flex text-center flex-col">
           <div className="text-xl text-primary font-bold py-2">Contact Us</div>
 
