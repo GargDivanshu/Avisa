@@ -69,7 +69,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white relative flex min-h-screen flex-col items-center md:px-36 px-6 md:pb-36">
+    <main className="bg-white relative flex min-h-screen h-[2700px] flex-col items-center md:px-36 px-6 md:pb-36">
       <Navbar />
       <div className="bg-transparent h-[100px]"></div>
       <div id="" className="md:mb-48 mb-96">
@@ -125,11 +125,11 @@ export default function Page() {
                 variants={staggerContainer}
                 initial="hidden"
                 whileInView="show"
-                className="flex flex-col p-4 font-semibold col-span-9 pl-0">
+                className="flex flex-col p-4 font-semibold col-span-9 md:pl-0">
                   <div className="text-primary">{item.word}</div>
                   <motion.div 
                   variants={fadeIn('up', 'tween', 0.1, 0.9)}
-                  className="text-gray-500 font-normal text-sm">
+                  className="text-gray-500 font-normal text-sm py-4">
                     {item.desc}
                   </motion.div>
                 </motion.div>
