@@ -53,7 +53,7 @@ export default function Home() {
       <div className="bg-transparent md:h-[62px] ">
       </div>
       
-      <div className={`relative md:w-full w-11/12 md:h-[500px] h-[500px] ${img} object-scale-down md:object-cover md:mb-4 mb-64`}>
+      <div className={`relative md:w-full w-screen bg-center bg-no-repeat bg-contain md:h-[500px] h-[500px] ${img} object-scale-down md:object-cover md:mb-4`}>
       <motion.div 
       variants={staggerContainer}
       initial="hidden"
