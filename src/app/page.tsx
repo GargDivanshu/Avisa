@@ -25,6 +25,25 @@ import Link from 'next/link'
 
 
 export default function Home() {
+  const str = `
+_______
+_____   _                           _               _____                                                                                                  
+|  __ \\ (_)                         | |             / ____|                                                                                                 
+| |  | | _ __   __ __ _  _ __   ___ | |__   _   _  | |  __   __ _  _ __  __ _                                                                               
+| |  | || |\\ \\ / // _\` || '_ \\ / __|| '_ \\ | | | | | |_ | / _\` || '__|/ _\` |                                                                              
+| |__| || | \\ V /| (_| || | | |\\__ \\| | | || |_| | | |__| || (_| || |  | (_| |                                                                              
+|_____/ |_|  \\_/  \\__,_||_| |_||___/|_| |_| \\__,_|  \\_____| \\__,_||_|   \\__, |                                                                              
+_  _                           _                                    __/ |_  __  ____                                     _  _                          
+| |(_)                         | |                                  |___/_ |/_ ||___ \\    ____                           (_)| |                         
+__| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | | |  __) |  / __ \\   __ _  _ __ ___    __ _  _ | |    ___  ___   _ __ ___  
+/ _\` || |\\ \\ / // _\` || '_ \\ / __|| '_ \\ | | | |   / _\` | / _\` || '__|/ _\` || | | | |__ <  / / _\` | / _\` || '_ \` _ \\  / _\` || || |   / __|/ _ \\ | '_ \` _ \\ 
+| (_| || | \\ V /| (_| || | | |\\__ \\| | | || |_| | _| (_| || (_| || |  | (_| || | | | ___) || | (_| || (_| || | | | | || (_| || || | _| (__| (_) || | | | | |
+\\__,_||_|  \\_/  \\__,_||_| |_||___/|_| |_| \\__,_|(_)\__, | \\__,_||_|   \\__, ||_| |_||____/  \\ \\__,_| \\__, ||_| |_| |_| \\__,_||_||_|(_)\___|\\___/ |_| |_| |_|
+                                              __/ |              __/ |                \\____/   __/ |                                                 
+                                             |___/              |___/                         |___/                                                  
+`;
+
+
   const CarouselData = [
     {
       id: 1,
@@ -68,9 +87,10 @@ export default function Home() {
   }, [CarouselData, img, text]);
 
   return (
-    <main className="text-black bg-white relative flex min-h-screen md:h-[2550px] h-[3300px] flex-col items-center md:px-24 px-6">
+    
+    <main className="text-black bg-white relative flex min-h-screen md:h-[2550px] h-[3700px] flex-col items-center md:px-24 px-6">
       <Navbar />
-
+      {console.log(str)}
       <div className="bg-transparent md:h-[62px] "></div>
 
       <div
@@ -123,22 +143,24 @@ export default function Home() {
         </Link>
 
         <div
-        className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-2 grid-rows-1 p-8 gap-8"
+        className="grid grid-cols-1 md:grid-cols-2 p-8 gap-8 justify-around"
         >
-        <img 
-        src="/newspaper.png"
-        className="col-span-2 row-span-2 rounded-md shadow-lg mx-auto"
-        alt="Newspaper"
-        />
+        
 
         <img 
         src="/Twitter_post.png"
-        className="rounded-md shadow-lg row-span-1 mx-auto"
+        className="rounded-md shadow-lg  mx-auto md:w-[350px] w-full aspect-auto"
         alt="Twitter"
         />
         <img 
         src="/newspaper-2.png"
-        className=" rounded-md shadow-lg row-span-1 mx-auto"
+        className=" rounded-md shadow-lg mx-auto md:w-[400px] w-full aspect-auto"
+        alt="Newspaper"
+        />
+
+<img 
+        src="/newspaper.png"
+        className=" rounded-md shadow-lg mx-auto "
         alt="Newspaper"
         />
         </div>

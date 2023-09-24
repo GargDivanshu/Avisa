@@ -175,3 +175,8 @@ body {
 input[type="file"] {
   display: none;
 }
+
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+}
