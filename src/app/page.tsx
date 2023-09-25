@@ -47,17 +47,17 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
   const CarouselData = [
     {
       id: 1,
-      img: "bg-[url('./../../public/pioneer.jpg')]",
+      img: "bg-[url('./../../public/Banner1.png')]",
       text: "Thalassaemia Solutions: 'Pioneering Breakthroughs for Optimal Well-being'",
     },
     {
       id: 2,
-      img: "bg-[url('./../../public/testing.jpg')]",
+      img: "bg-[url('./../../public/Banner2.png')]",
       text: "Catalyzing Change, Transforming Lives: Affordable Thalassaemia Testing Across India",
     },
     {
       id: 3,
-      img: "bg-[url('./../../public/ai_adv.jpeg')]",
+      img: "bg-[url('./../../public/Banner3.png')]",
       text: "The Future of Thalassaemia Diagnosis: Leveraging AI for precise results",
     },
   ];
@@ -90,7 +90,6 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
     
     <main className="text-black bg-white relative flex min-h-screen md:h-[2550px] h-[3700px] flex-col items-center md:px-0 px-6">
       <Navbar />
-      {console.log(str)}
       <div className="bg-transparent md:h-[62px] "></div>
 
       <div

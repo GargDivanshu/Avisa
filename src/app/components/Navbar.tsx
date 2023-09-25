@@ -44,7 +44,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
 
   const [hover, setHover] = useState(false);
 
-  console.log(hover + " hover");
+
   function MouseOver(event: React.MouseEvent) {
     setHover(true);
   }
@@ -158,7 +158,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
           {hoverAbout && (
             <ul className=" text-primary">
               <Link href="/about">
-              <div className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">
+              <div className="py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">
                 Company Profile
               {/* <Link
               href="/about"
@@ -177,10 +177,10 @@ const Navbar: FC = ({missionRef, careRef}) => {
             href="/about/mission_vision_values"
             >
               <li 
-              className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">Mission,Vision,Values</li>
+              className=" py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">Mission,Vision,Values</li>
               </Link>
           
-              <Link href="/about/team"><li className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer ">Our Team</li></Link>
+              <Link href="/about/team"><li className="py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer ">Our Team</li></Link>
             </ul>
           )}
           {hoverServices && (

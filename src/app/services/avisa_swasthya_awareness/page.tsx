@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
@@ -31,11 +32,11 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[2600px] h-[3700px] mx-auto relative flex flex-col">
+    <div className="text-black bg-white md:h-[2600px] h-[4200px] mx-auto relative flex flex-col">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
-      <div className="rounded-md shadow-md absolute top-24 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white">
+      <div className="rounded-md absolute top-16 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white">
         {/* <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
         Vacuum Assisted Delivery Machine
         </div>
@@ -49,117 +50,149 @@ export default function Page() {
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center">
           Avisa Swasthya Awareness
         </div>
-        <div className="w-3/5 h-fit mx-auto my-16 grid md:grid-cols-2 grid-cols-1 border-b-[1px] border-primary">
-          <div className="col-span-1 p-8">
-            <Doughnut data={data} options={options} />
-          </div>
-          <div>
-            <div className="flex flex-col h-fit my-auto">
-              <li className="text-xl font-bold py-4 my-auto">
-                Health Education
-              </li>
 
-              {/* <div className="text-xl font-bold py-4 my-auto">
-                Health Check-up Camps
-              </div> */}
-
-              <li className="text-xl font-bold py-4 my-auto">
-                Health Research
-              </li>
-
-              <li className="text-xl font-bold py-4 my-auto">
-              Health Informatics
-              </li>
-            </div>
-          </div>
-        </div>
-
-        {/* <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
-          What is Hemoglobinopathy?
-        </div> */}
-
-        <div className="md:w-3/5 w-4/5 my-2 pb-8 border-b-[1px] border-primary text-primary mx-auto h-fit text-lg text-center">
+        <div className="md:w-3/5 w-4/5 my-2 pb-8 border-b-[1px] border-primary text-black mx-auto h-fit text-lg text-center">
         Our main goal is to help people lead healthier lives by providing useful information. We&apos;re dedicated to creating
         educational programs about health for different ages and communities. Our aim is to make more people aware of how to prevent 
         illnesses, manage diseases, and live healthily. Our programs, led by our knowledgeable healthcare team, include workshops, talks, and interactive sessions. We also believe in the importance of research to make healthcare better. We&apos;re teaming up with respected medical institutions and experts to improve medical knowledge, find new ways of treating health issues, and tackle common community health problems. At Avisa Swasthya, we&apos;re here to promote health awareness and drive important research for a healthier future.&quot;
         </div>
 
+
+        <div className="w-3/5 h-fit text-center mx-auto my-16 grid md:grid-cols-3 grid-cols-1 border-b-[1px] border-primary">
+          {/* <div className="col-span-1 p-8">
+            <Doughnut data={data} options={options} />
+          </div> */}
+      
+          <div className="text-xl text-black font-bold py-4 my-auto flex flex-col h-full ">
+                <img 
+                src="/19.png"
+                alt="Health Education"
+                className="md:w-[100px] w-[75px] aspect-auto mx-auto my-8"
+                />
+                Health Education
+              </div>
+              <div className="text-xl text-black font-bold py-4 my-auto flex flex-col h-full ">
+                <img 
+                src="/20.png"
+                alt="Mass General Health Check-Up "
+                className="md:w-[100px] w-[75px] aspect-auto mx-auto my-8"
+                />
+                Health Research
+              </div>
+              <div className="text-xl text-black font-bold py-4 my-auto flex flex-col h-full ">
+                <img 
+                src="/21.png"
+                alt="Mass General Health Check-Up "
+                className="md:w-[100px] w-[75px] aspect-auto mx-auto my-8"
+                />
+                Health Informatics
+              </div>
+            </div>
+        
+       
+
+        {/* <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
+          What is Hemoglobinopathy?
+        </div> */}
+
+        
+
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Health Education
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
-          <div className="col-span-1 p-2">
-          <p className="py-2">
-              1) Avisa Swasthya is dedicated to providing health education through various
+        
+        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
+        <div>
+                <img 
+                src="/8.png"
+                alt="Counseling and Guidance"
+                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1"
+                />
+            </div>
+          <div className="col-span-2 p-2">
+          <li className="py-2">
+              Avisa Swasthya is dedicated to providing health education through various
 initiatives
-            </p>
+            </li>
 
-            <p className="py-2">
-              2) We will develop comprehensive health education programs, targeting
+            <li className="py-2">
+              We will develop comprehensive health education programs, targeting
 different age groups and communities, to promote awareness about
 preventive healthcare, disease management, and healthy lifestyle
 practices.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              3) These programs will include workshops, seminars, and interactive sessions
+            <li className="py-2">
+              These programs will include workshops, seminars, and interactive sessions
 conducted by our knowledgeable healthcare professionals.
-            </p>
+            </li>
           </div>
         </div>
 
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Health Research
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
-          <div>some image</div>
-          <div className="col-span-1 p-2 ">
-          <p className="py-2">
-              1) At Avisa Swasthya, we understand the importance of continuous research
+        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
+        <div>
+                <img 
+                src="/20.png"
+                alt="Counseling and Guidance"
+                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1"
+                />
+            </div>
+          <div className="col-span-2 p-2 ">
+          <li className="py-2">
+              At Avisa Swasthya, we understand the importance of continuous research
 in improving healthcare outcomes.
-            </p>
+            </li>
 
-            <p className="py-2">
-              2) We will actively engage in health research by collaborating with renowned
+            <li className="py-2">
+              We will actively engage in health research by collaborating with renowned
 medical institutions, researchers, and experts.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              3) Our research efforts will focus on contributing to advancements in
+            <li className="py-2">
+               Our research efforts will focus on contributing to advancements in
 healthcare knowledge, exploring innovative treatment approaches, and
 addressing prevalent health issues in the community.
 
-            </p>
+            </li>
           </div>
         </div>
 
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
         Health Infomatics
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
-          <div className="col-span-1 p-2">
-          <p className="py-2">
-              1) Avisa Swasthya is dedicated to providing health education through various
+        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
+        <div>
+                <img 
+                src="/21.png"
+                alt="Counseling and Guidance"
+                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1"
+                />
+            </div>
+          <div className="col-span-2 p-2">
+          <li className="py-2">
+              Avisa Swasthya is dedicated to providing health education through various
 initiatives.
-            </p>
+            </li>
 
-            <p className="py-2">
-              2) We will develop comprehensive health education programs, targeting
+            <li className="py-2">
+              We will develop comprehensive health education programs, targeting
 different age groups and communities, to promote awareness about
 preventive healthcare, disease management, and healthy lifestyle
 practices
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              3) These programs will include workshops, seminars, and interactive sessions
+            <li className="py-2">
+              These programs will include workshops, seminars, and interactive sessions
 conducted by our knowledgeable healthcare professionals.
 
-            </p>
+            </li>
           </div>
-          <div>some image</div>
         </div>
 
         {/* <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">

@@ -19,12 +19,12 @@ export default function Page() {
         // 0FVkLr5G4IySvS8P4
       )
       .then((result) => {
-        console.log(result.text);
-        console.log('successful');
+        
+      
         window.location.reload();
     }, (error) => {
-        console.log(error.text);
-        console.log('unsuccessful');
+      
+       
         alert('some erro')
     });
 };

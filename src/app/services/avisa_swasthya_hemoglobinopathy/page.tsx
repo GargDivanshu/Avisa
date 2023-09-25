@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
@@ -30,11 +31,11 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[3300px] h-[5000px] mx-auto relative">
+    <div className="text-black bg-white md:h-[3300px] h-[6000px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
-      <div className="rounded-md shadow-md absolute top-24 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white py-24">
+      <div className="rounded-md absolute top-16 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white py-24">
         {/* <Image
           src="/ques_mark.png"
           alt="What is Hemoglobinopathy"
@@ -47,7 +48,7 @@ export default function Page() {
           What is Hemoglobinopathy?
         </div>
 
-        <div className="md:w-3/5 w-4/5 my-8 pb-8 border-b-[1px] border-primary text-primary mx-auto h-fit text-lg text-center">
+        <div className="md:w-3/5 w-4/5 my-8 pb-8 border-b-[1px] border-primary text-black mx-auto h-fit text-lg text-center">
           Hemoglobinopathy refers to a group of genetic disorders that affect
           the structure or production of hemoglobin, the molecule responsible
           for carrying oxygen in red blood cells. These disorders include
@@ -62,23 +63,39 @@ export default function Page() {
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center">
           Our Services in Hemoglobinopathy
         </div>
-        <div className="w-3/5 h-fit mx-auto my-16 grid md:grid-cols-2 grid-cols-1 border-b-[1px] border-primary">
-          <div className="col-span-1 p-8">
+        <div className="w-3/5 h-fit mx-auto my-16 grid md:grid-cols-3 grid-cols-1 border-b-[1px] border-primary text-center">
+          {/* <div className="col-span-1 p-8">
             <Doughnut data={data} options={options} />
-          </div>
-          <div className="justify-center">
-            <div className="flex flex-col h-fit my-auto">
-              <li className="text-xl font-bold py-4 my-auto">
+          </div> */}
+          {/* <div className="justify-center"> */}
+            {/* <div className="flex flex-col h-fit my-auto"> */}
+              <div className="text-xl font-bold py-4 my-auto flex flex-col h-full">
+                <img 
+                src="/5.png"
+                alt="Screening and Diagnosis"
+                className="md:w-[100px] w-[75px] aspect-auto mx-auto my-8"
+                />
                 Screening and Diagnosis
-              </li>
+              </div>
 
-              <li className="text-xl font-bold py-4 my-auto">
+              <div className="text-xl font-bold py-4 my-auto flex flex-col  h-full">
+              <img 
+                src="/6.png"
+                alt="Counseling and guidance"
+                className="md:w-[100px] w-[75px] aspect-auto mx-auto my-8"
+                />
                 Counseling and guidance
-              </li>
+              </div>
 
-              <li className="text-xl font-bold py-4 my-auto">Testing</li>
-            </div>
-          </div>
+              <div className="text-xl font-bold py-4 my-auto flex flex-col h-full">
+              <img 
+                src="/7.png"
+                alt="Testing"
+                className="md:w-[100px] w-[75px] aspect-auto mx-auto my-8"
+                />
+                Testing</div>
+            {/* </div> */}
+          {/* </div> */}
         </div>
 
         <div className="w-4/5 text-3xl text-center text-primary font-bold mx-auto py-4">
@@ -86,78 +103,91 @@ export default function Page() {
           {/* (Sickle Cell, Thalassemia (gazelle) and Anemia */}
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
-          <div className="col-span-1 p-2">
-            <p className="py-2">
-              1) Our cutting-edge diagnosis machine is designed to test for Hemoglobinopathy diseases like Sickle Cell
+            <div>
+                <img 
+                src="/8.png"
+                alt="Counseling and Guidance"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                />
+            </div>
+        
+            <div className="col-span-1 p-2">
+            <li className="py-2">
+               Our cutting-edge diagnosis machine is designed to test for Hemoglobinopathy diseases like Sickle Cell
 and beta thalassemia. With its advanced AI and Machine Learning capabilities, it delivers accurate and
 precise results, revolutionizing the diagnostic process.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              2) It aims to make diagnosis accessible and affordable for all, ensuring that individuals and communities
+            <li className="py-2">
+              It aims to make diagnosis accessible and affordable for all, ensuring that individuals and communities
 have access to crucial information about their health. By leveraging AI and Machine Learning algorithms, it
 analyzes genetic markers and provides comprehensive reports that aid in the early detection and
 management of Hemoglobinopathy diseases.
-            </p>
+            </li>
 
-            <p className="py-2">
-              3) This diagnostic machine not only enhances the efficiency of the
+            <li className="py-2">
+              This diagnostic machine not only enhances the efficiency of the
               diagnostic process but also empowers healthcare professionals with
               valuable insights for personalized treatment plans. Its
               user-friendly interface and automated processes make it easy to
               operate, enabling widespread adoption across healthcare
               facilities.
-            </p>
+            </li>
 
-            <p className="py-2">
-              4) At <strong>Avisa Swasthya</strong>, we are committed to
+            <li className="py-2">
+              At <strong>Avisa Swasthya</strong>, we are committed to
               utilizing advanced technology like Gazelle to bridge the gap in
               healthcare accessibility. By offering accurate and affordable
               testing for Hemoglobinopathy diseases, we aim to improve patient
               outcomes, raise awareness, and contribute to the overall
               well-being of individuals and communities.
-            </p>
+            </li>
           </div>
         </div>
+  
 
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Counseling and Guidance
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
             <div>
-                some image
+                <img 
+                src="/9.png"
+                alt="Counseling and Guidance"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                />
             </div>
           <div className="col-span-1 p-2">
-          <p className="py-2">
-              1) Avisa will play a crucial role in providing counseling and guidance for
+          <li className="py-2">
+              Avisa will play a crucial role in providing counseling and guidance for
 individuals with hemoglobinopathy diseases.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              2) They offer specialized services to educate patients and their families
+            <li className="py-2">
+              They offer specialized services to educate patients and their families
 about the condition, its symptoms, and treatment options.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              3) Avisa&apos;s team of experts provide personalized counseling sessions to
+            <li className="py-2">
+              Avisa&apos;s team of experts provide personalized counseling sessions to
 address the emotional and psychological aspects of living with
 hemoglobinopathies.
-            </p>
+            </li>
 
-            <p className="py-2">
-              4) They offer guidance on managing symptoms, promoting healthy
+            <li className="py-2">
+              They offer guidance on managing symptoms, promoting healthy
 lifestyles, and navigating the healthcare system.
 
-            </p>
+            </li>
 
-            <p className="py-2">5) Avisa also works closely with healthcare professionals to ensure
+            <li className="py-2">Avisa also works closely with healthcare professionals to ensure
 comprehensive care and support for individuals affected by
 hemoglobinopathies.
 
-            </p>
+            </li>
           </div>
         </div>
 
@@ -167,42 +197,46 @@ hemoglobinopathies.
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
           <div  className="col-span-1 p-2">
-        <p className="py-2">
-              1) Avisa is dedicated to advancing the treatment of hemoglobinopathy
+        <li className="py-2">
+              Avisa is dedicated to advancing the treatment of hemoglobinopathy
 diseases.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              2) They invest in research and development to develop innovative therapies
+            <li className="py-2">
+              They invest in research and development to develop innovative therapies
 specifically tailored for these conditions.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-              3) Avisa collaborates with healthcare professionals and experts in the field to
+            <li className="py-2">
+              Avisa collaborates with healthcare professionals and experts in the field to
 design effective treatment protocols
-            </p>
+            </li>
 
-            <p className="py-2">
-              4) They provide access to cutting-edge medications and therapies that target
+            <li className="py-2">
+              They provide access to cutting-edge medications and therapies that target
 the underlying mechanisms of hemoglobinopathies.
 
-            </p>
+            </li>
 
-            <p className="py-2">5) Avisa also offers patient support programs to ensure adherence to
+            <li className="py-2">Avisa also offers patient support programs to ensure adherence to
 treatment plans and provide resources for managing potential side effects.
 
-            </p>
+            </li>
 
-            <p className="py-2">
-            6) Through their commitment to improving treatment options, Avisa aims to
+            <li className="py-2">
+            Through their commitment to improving treatment options, Avisa aims to
 enhance the quality of life for individuals with hemoglobinopathies.
-            </p>
+            </li>
             </div>
 
           <div>
-                some image
+          <img 
+                src="/10.png"
+                alt="Counseling and Guidance"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                />
             </div>
         </div>
 

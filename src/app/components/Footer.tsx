@@ -9,7 +9,7 @@ const Footer: FC = () => {
   return (
     <div className="w-full text-black md:h-[300px] h-fit bg-gray-200 absolute bottom-0 ">
       <div className="md:mx-24 my-auto mx-4 text-sm md:flex-row flex-col flex justify-evenly mb-16 md:mt-8">
-        <div className="flex text-center flex-col">
+        <div className="flex text-left flex-col">
           <div className="text-xl text-primary font-bold py-2">About</div>
 
           <Link
@@ -37,36 +37,36 @@ const Footer: FC = () => {
           </Link>
         </div>
 
-        <div className="flex text-center flex-col">
+        <div className="flex flex-col text-left">
           <div className="text-xl text-primary font-bold py-2">Services</div>
 
           <Link
           href="/services/avisa_swasthya_hemoglobinopathy"
           >
-          <div className="py-1">Avisa Swasthya Hemoglobinopathy</div>
+          <div className="py-1 text-left">Avisa Swasthya Hemoglobinopathy</div>
           </Link>
 
           <Link
           href="/services/avisa_swasthya_maternal_and_child_care"
           >
-          <div className="py-1">Avisa Swasthya Maternal and Child Care</div>
+          <div className="py-1 text-left">Avisa Swasthya Maternal and Child Care</div>
           </Link>
 
 
           <Link
           href="/services/avisa_swasthya_awareness"
           >
-          <div className="py-1">Avisa Swasthya Awareness</div>
+          <div className="py-1 text-left">Avisa Swasthya Awareness</div>
           </Link>
 
           <Link
           href="/services/avisa_swasthya_health_and_care_camps"
           >
-          <div className="py-1">Avisa Swasthya Health and Care Camp</div>
+          <div className="py-1 text-left">Avisa Swasthya Health and Care Camp</div>
           </Link>
         </div>
 
-        <div className="flex text-center flex-col">
+        {/* <div className="flex text-center flex-col">
         <Link
           href="/career"
           >
@@ -79,10 +79,10 @@ const Footer: FC = () => {
           >
           <div className="py-1">Career</div>
           </Link>
-        </div>
+        </div> */}
 
 
-        <div className="relative flex text-center flex-col">
+        <div className="relative flex text-left flex-col">
           <div className="text-xl text-primary font-bold py-2">Contact Us</div>
 
           <div className="py-1">
