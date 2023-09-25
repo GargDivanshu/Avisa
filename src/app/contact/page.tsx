@@ -58,14 +58,14 @@ export default function Page() {
                 
                 <div className="flex flex-col">
                 <div className="my-4 flex flex-col">
-      <label className="font-semibold text-sm text-gray-500">Name</label>
+      <label className="font-semibold text-sm text-black">Name</label>
       <input 
       className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
       type="text" name="user_name" />
       </div>
 
       <div className="my-4 flex flex-col">
-      <label className="font-semibold text-sm text-gray-500">Email</label>
+      <label className="font-semibold text-sm text-black">Email</label>
       <input 
       className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
       type="email" name="user_email" />
@@ -73,7 +73,7 @@ export default function Page() {
 
       <div className="my-4 flex flex-col">
       <label 
-      className="font-semibold text-sm text-gray-500"
+      className="font-semibold text-sm text-black"
       >Message</label>
       <textarea 
        className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"

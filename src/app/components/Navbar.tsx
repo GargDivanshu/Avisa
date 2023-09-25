@@ -93,7 +93,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
       <div
     //   onMouseLeave={handleMouseLeave}
         onClick={handleMouseLeave}
-        className="z-20 sm:flex fixed hidden bg-white w-full shadow-md border-b-[4px] border-b-primary p-1"
+        className="z-20 text-primary sm:flex fixed hidden bg-white w-full shadow-md border-b-[4px] border-b-primary p-1"
       >
         <Link
         href="/"
@@ -106,7 +106,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
           className="ml-8"
         />
         </Link>
-        <ul className="flex font-semibold text-gray-500 mx-auto my-4">
+        <ul className="flex font-semibold text-primary mx-auto my-4">
           <Link href="/">
             <li className="px-4 hover:text-black hover:cursor-pointer">Home</li>
           </Link>
@@ -151,15 +151,16 @@ const Navbar: FC = ({missionRef, careRef}) => {
       </div>
       <div 
       onMouseLeave={handleMouseLeave}
-      className="w-[200px] h-fit mx-auto">
+      className="w-[200px] h-fit mx-auto  text-sm">
       {showDropdown && (
         <div  className={`mx-auto z-10 fixed bg-white rounded-md p-4 mt-[60px] h-fit shadow-md w-[320px] text-center ${
             showDropdown ? "" : "hidden"}`}>
           {hoverAbout && (
-            <ul className=" text-gray-500">
-              <div className=" hover:cursor-pointer py-2 text-left flex flex-col border-b-[1px]  ">
+            <ul className=" text-primary">
+              <Link href="/about">
+              <div className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">
                 Company Profile
-              <Link
+              {/* <Link
               href="/about"
               >
               <li className="w-3/4 text-left mx-auto hover:text-black rounded-md hover:bg-black/10 p-1 duration-100 ease-in">About Us</li></Link>
@@ -168,8 +169,9 @@ const Navbar: FC = ({missionRef, careRef}) => {
               >
               <li 
               className="w-3/4 text-left mx-auto hover:text-black rounded-md hover:bg-black/10 p-1 duration-100 ease-in">Care Guidelines</li>
-              </Link>
+              </Link> */}
               </div>
+              </Link>
             
             <Link
             href="/about/mission_vision_values"
@@ -178,11 +180,11 @@ const Navbar: FC = ({missionRef, careRef}) => {
               className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer">Mission,Vision,Values</li>
               </Link>
           
-              <Link href="/about/team"><li className="rounded-md hover:bg-black/10 hover:text-black hover:cursor-pointer p-4 duration-100 ease-in text-left border-b-[1px] ">Our Team</li></Link>
+              <Link href="/about/team"><li className="hover:text-black py-2 text-left border-b-[1px] rounded-md hover:bg-black/10 p-4 duration-100 ease-in hover:cursor-pointer ">Our Team</li></Link>
             </ul>
           )}
           {hoverServices && (
-            <ul className="text-gray-500">
+            <ul className="text-primary text-sm">
               <Link href="/services/avisa_swasthya_hemoglobinopathy">
               <div className="hover:bg-black/10 rounded-md p-4 border-b-[1px] cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Hemoglobinopathy
@@ -275,7 +277,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
       <div className="p-6 py-1 sm:hidden fixed w-full justify-evenly z-30 bg-white shadow-lg ">
         <HiMenu
           onClick={() => setHidden(!hidden)}
-          className="absolute  top-0 bottom-0 my-auto text-black z-30"
+          className="absolute  top-0 bottom-0 my-auto text-primary z-30"
           fontSize={32}
         />
 
@@ -295,7 +297,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/">
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
                 Home
               </li>
             </Link>
@@ -305,7 +307,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
               onClick={() => setMobileAbout(!mobileAbout)}
               className={`
               ${(!mobileAbout) ? "" : "border-b-[2px] border-primary"}
-              shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center flex`}>
+              shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center flex`}>
                 <p
                 className="mx-auto"
                 >About</p>
@@ -329,26 +331,26 @@ const Navbar: FC = ({missionRef, careRef}) => {
                href="/about"
                onClick={closeNav}
                >
-               <li className={`p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center`}>
-                About Us
+               <li className={`p-2 hover:text-black hover:cursor-pointer text-sm text-primary text-center`}>
+                Company Profile
               </li>
                </Link>
 
-               <Link
+               {/* <Link
               href="/about/care_guidelines"
               >
                <li 
-               className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center">
+               className="p-2 hover:text-black hover:cursor-pointer text-sm text-primary text-center">
                 Care Guidelines
               </li>
-              </Link>
+              </Link> */}
             
 
             <Link
             href="/about/mission_vision_values"
             >
                <li 
-               className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
+               className="p-2 hover:text-black hover:cursor-pointer text-sm text-primary text-center ">
                Mission,Vision,Values
               </li>
               </Link>
@@ -358,7 +360,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
                href="/about/team"
                onClick={closeNav}
                >
-               <li className="p-2 hover:text-black hover:cursor-pointer text-sm text-gray-500 text-center ">
+               <li className="p-2 hover:text-black hover:cursor-pointer text-sm text-primary text-center ">
                Our Team
               </li>
                </Link>
@@ -368,7 +370,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
               onClick={() => setMobileServices(!mobileServices)}
               className={`
               ${(!mobileServices) ? "" : "border-b-[2px] border-primary"}
-              shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center flex`}>
+              shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center flex`}>
                 <p
                 className="mx-auto"
                 >Services</p>
@@ -392,7 +394,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
               <Link 
               onClick={closeNav}
               href="/services/avisa_swasthya_hemoglobinopathy">
-              <div className="hover:bg-black/10 text-gray-500 text-center rounded-md p-2 text-sm cursor-pointer duration-100 ease-in">
+              <div className="hover:bg-black/10 text-primary text-center rounded-md p-2 text-sm cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Hemoglobinopathy
               </div>
             </Link>
@@ -400,7 +402,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/services/avisa_swasthya_maternal_and_child_care">
-              <div className="p-2 text-gray-500 rounded-md text-center hover:bg-black/10 text-sm cursor-pointer duration-100 ease-in">
+              <div className="p-2 text-primary rounded-md text-center hover:bg-black/10 text-sm cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Maternal and Child Care
               </div>
             </Link>
@@ -408,7 +410,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/services/avisa_swasthya_awareness">
-              <div className="p-2 text-center text-sm text-gray-500 hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
+              <div className="p-2 text-center text-sm text-black hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Awareness
               </div>
             </Link>
@@ -416,7 +418,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/services/avisa_swasthya_health_and_care_camps">
-              <div className="p-2 text-center text-sm text-gray-500 hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
+              <div className="p-2 text-center text-sm text-black hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Health and Care Camp
               </div>
             </Link>
@@ -426,7 +428,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/information_center">
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
                 Information Center
               </li>
             </Link>
@@ -434,7 +436,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/contact">
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
                 Contact
               </li>
             </Link>
@@ -442,7 +444,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/career">
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-gray-500 text-center ">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
                 Career
               </li>
             </Link>

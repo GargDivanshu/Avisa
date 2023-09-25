@@ -34,7 +34,7 @@ export default function Page() {
         </div>
 
         <div
-        className="text-gray-500 w-11/12 text-base"
+        className="text-black w-11/12 text-base"
         >
             We are partnering with people having an entrepreneurial mindset and committed to offer superior investment products and services to our investors. We are committed to promote freedom at work, fair compensation and a collaborative learning environment. We also aim to challenge conventional investment philosophies and facilitate change to pursue growth.
         </div>
@@ -46,30 +46,30 @@ export default function Page() {
                 
                 <div className="flex flex-col">
                 <div className="my-4 flex flex-col">
-      <label className="font-semibold text-sm text-gray-500">Name</label>
+      <label className="font-semibold text-sm text-black">Name</label>
       <input 
       className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
       type="text" name="user_name" required/>
       </div>
 
       <div className="my-4 flex flex-col">
-      <label className="font-semibold text-sm text-gray-500">Email</label>
+      <label className="font-semibold text-sm text-black">Email</label>
       <input 
       className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
       type="email" name="user_email" required/>
       </div>
 
       <div className="my-4 flex flex-col">
-      <label className="font-semibold text-sm text-gray-500">Position</label>
+      <label className="font-semibold text-sm text-black">Position</label>
       <input 
       className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
       type="text" name="position" required/>
       </div>
 
       <div className="my-4 flex flex-col">
-        <label className="font-semibold text-sm text-gray-500">Resume <span className="text-sm font-light">(.pdf format)</span></label>
+        <label className="font-semibold text-sm text-black">Resume <span className="text-sm font-light">(.pdf format)</span></label>
       <label 
-      className="font-semibold text-gray-500 cursor-pointer border-[2px] rounded-md p-2 my-1 border-gray-200 focus:outline-none text-sm w-fit">
+      className="font-semibold text-black cursor-pointer border-[2px] rounded-md p-2 my-1 border-gray-200 focus:outline-none text-sm w-fit">
         {/* custom-file-upload */}
     <input  accept=".pdf" className="flex flex-col text-center" type="file" required/>
     <BsUpload fontSize={20} className="mx-auto"/>
@@ -77,7 +77,7 @@ export default function Page() {
       </div>
 
       <div className="my-4 flex flex-col">
-      <label className="font-semibold text-sm text-gray-500">Work Experience <span className="text-sm font-light">(in Years)</span></label>
+      <label className="font-semibold text-sm text-black">Work Experience <span className="text-sm font-light">(in Years)</span></label>
       <input 
       className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"
       type="number" name="workEx" required/>
@@ -85,7 +85,7 @@ export default function Page() {
 
       <div className="my-4 flex flex-col">
       <label 
-      className="font-semibold text-sm text-gray-500"
+      className="font-semibold text-sm text-black"
       >Message</label>
       <textarea 
        className="border-[2px] rounded-md my-1 border-gray-200 focus:outline-none p-1 text-sm"

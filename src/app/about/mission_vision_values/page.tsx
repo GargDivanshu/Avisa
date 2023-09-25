@@ -82,7 +82,7 @@ export default function Page() {
         className="flex md:flex-row flex-col text-sm py-6 my-6">
           <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
-          className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+          className=" shadow shadow-primary text-black text-center justify-center md:px-24 p-6 m-8 flex flex-col">
             <TbTargetArrow
               fontSize={75}
               className="mx-auto mb-4 text-primary"
@@ -98,7 +98,7 @@ export default function Page() {
 
           <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
-          className=" shadow shadow-primary text-gray-500 text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+          className=" shadow shadow-primary text-Black text-center justify-center md:px-24 p-6 m-8 flex flex-col">
             <SlBadge fontSize={75} className="mx-auto mb-4 text-primary" />
             <span className="text-lg font-bold text-primary">Vision</span>
             &quot;Our vision aligns with the nation&apos;s goal to transform
@@ -129,7 +129,7 @@ export default function Page() {
                   <div className="text-primary">{item.word}</div>
                   <motion.div 
                   variants={fadeIn('up', 'tween', 0.1, 0.9)}
-                  className="text-gray-500 font-normal text-sm py-4">
+                  className="text-black font-normal text-sm py-4">
                     {item.desc}
                   </motion.div>
                 </motion.div>

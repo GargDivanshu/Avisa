@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const About: FC = () => {
   return (
-    <div className="text-black shadow-md rounded-md md:w-full w-full flex flex-col justify-center text-center">
+    <div className="text-black rounded-md md:w-full w-full flex flex-col justify-center text-center">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -27,12 +27,12 @@ const About: FC = () => {
         // viewport={{ once: false, amount: 0.1 }}
         className="md:text-3xl text-2xl font-bold h-fit my-auto text-primary"
       >
-        <motion.p
+        {/* <motion.p
           className="py-8"
           // variants={fadeIn('up', 'tween', 0.2, 1)}
         >
           Who We Are ?
-        </motion.p>
+        </motion.p> */}
       </motion.div>
 
       <motion.div
@@ -40,9 +40,11 @@ const About: FC = () => {
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
-        className="md:col-span-2 text-gray-500 p-2"
+        className="md:col-span-2 text-black p-2"
       >
-        <motion.p variants={fadeIn("up", "tween", 0.1, 0.9)}>
+        <motion.p 
+        className="md:w-4/5 w-full mx-auto"
+        variants={fadeIn("up", "tween", 0.1, 0.9)}>
           At Avisa Swasthya, we are dedicated to transforming healthcare through
           innovation and compassion. With our advanced diagnostic solutions, we
           ensure accurate and accessible testing for all. From comprehensive
@@ -61,9 +63,10 @@ const About: FC = () => {
         className="text-center md:text-3xl text-2xl  text-primary font-bold col-span-4 py-4"
       >
         <motion.p
+        className="my-4 md:text-5xl text-3xl"
         //  variants={fadeIn('up', 'tween', 0.2, 1)}
         >
-          OUR SERVICES
+          Our Services
         </motion.p>
       </motion.span>
       <motion.div
