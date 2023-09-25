@@ -93,7 +93,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
       <div
     //   onMouseLeave={handleMouseLeave}
         onClick={handleMouseLeave}
-        className="z-20 text-primary sm:flex fixed hidden bg-white w-full shadow-md border-b-[4px] border-b-primary p-1"
+        className="z-20 text-primary sm:flex fixed hidden bg-white w-full shadow-md border-b-[4px] border-b-primary p-1 "
       >
         <Link
         href="/"
@@ -106,7 +106,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
           className="ml-8"
         />
         </Link>
-        <ul className="flex font-semibold text-primary mx-auto my-4">
+        <ul className="flex font-semibold text-primary mx-auto my-4 mr-4">
           <Link href="/">
             <li className="px-4 hover:text-black hover:cursor-pointer">Home</li>
           </Link>
@@ -411,7 +411,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/services/avisa_swasthya_awareness">
-              <div className="p-2 text-center text-sm text-black hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
+              <div className="p-2 text-center text-sm text-primary hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Awareness
               </div>
             </Link>
@@ -419,7 +419,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <Link 
             onClick={closeNav}
             href="/services/avisa_swasthya_health_and_care_camps">
-              <div className="p-2 text-center text-sm text-black hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
+              <div className="p-2 text-center text-sm text-primary hover:bg-black/10 rounded-md cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Health and Care Camp
               </div>
             </Link>

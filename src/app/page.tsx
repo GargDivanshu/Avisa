@@ -88,12 +88,12 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
 
   return (
     
-    <main className="text-black bg-white relative flex min-h-screen md:h-[2550px] h-[3700px] flex-col items-center md:px-0 px-6">
+    <main className="text-black bg-white relative flex min-h-screen md:h-[2650px] h-[3700px] flex-col items-center ">
       <Navbar />
       <div className="bg-transparent md:h-[62px] "></div>
 
       <div
-        className={`relative md:mx-24 w-full bg-center bg-no-repeat bg-contain md:bg-cover md:h-[500px] h-[500px] ${img} md:mb-4`}
+        className={`relative md:mx-24 w-full bg-center bg-no-repeat bg-contain md:bg-cover md:h-[500px] h-[400px] ${img} md:mb-4`}
       >
         <motion.div
           variants={staggerContainer}
@@ -104,19 +104,19 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
         >
           <motion.span
             variants={textVariant(1.1)}
-            className="md:text-3xl text-xl font-bold text-center h-fit absolute top-0 bottom-0 left-0 right-0 m-auto"
+            className="md:text-3xl text-white text-xl font-bold text-left h-fit absolute top-0 bottom-0 left-0 right-0 m-auto"
           >
             {text}
           </motion.span>
         </motion.div>
       </div>
       <div
-      className="md:mx-24"
+      className="md:mx-24 mx-6"
       >
       <About />
       </div>
 
-      <div className="my-8 md:mx-24">
+      <div className="my-8 md:mx-24 mx-6">
         {/* <h1
          className="md:text-3xl text-center my-4 py-8 text-2xl font-bold h-fit my-auto text-primary"
         >Information Center</h1> */}

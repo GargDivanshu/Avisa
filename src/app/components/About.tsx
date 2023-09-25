@@ -15,6 +15,7 @@ const About: FC = () => {
         className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary"
       >
         <motion.p
+        className="py-8"
         // variants={fadeIn('up', 'tween', 0.2, 1)}
         >
           About Us
