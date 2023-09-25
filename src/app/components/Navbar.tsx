@@ -187,25 +187,25 @@ const Navbar: FC = ({missionRef, careRef}) => {
           {hoverServices && (
             <ul className="text-primary text-sm">
               <Link href="/services/avisa_swasthya_hemoglobinopathy">
-              <div className="hover:bg-black/10 rounded-md p-4 border-b-[1px] cursor-pointer duration-100 ease-in">
+              <div className="hover:bg-black/10 rounded-md p-2 border-b-[1px] cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Hemoglobinopathy
               </div>
             </Link>
 
             <Link href="/services/avisa_swasthya_maternal_and_child_care">
-              <div className="p-4 border-b-[1px] rounded-md hover:bg-black/10 cursor-pointer duration-100 ease-in">
+              <div className="p-2 border-b-[1px] rounded-md hover:bg-black/10 cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Maternal and Child Care
               </div>
             </Link>
 
             <Link href="/services/avisa_swasthya_health_and_care_camps">
-              <div className="hover:bg-black/10 rounded-md p-4 border-b-[1px] cursor-pointer duration-100 ease-in">
+              <div className="hover:bg-black/10 rounded-md p-2 border-b-[1px] cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Health and Care Camp
               </div>
             </Link>
 
             <Link href="/services/avisa_swasthya_awareness">
-              <div className="p-4 hover:bg-black/10 rounded-md border-b-[1px]  cursor-pointer duration-100 ease-in">
+              <div className="p-2 hover:bg-black/10 rounded-md border-b-[1px]  cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Awareness
               </div>
             </Link>
