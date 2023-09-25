@@ -150,6 +150,13 @@ export default function Page() {
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 px-8">
           {/* <div>some image</div> */}
+          <div className="col-span-1">
+                <img 
+                src="/12.png"
+                alt="Vacuum Assisted Delivery Machine"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                />
+            </div>
           <div className="col-span-2 p-2">
             <li className="py-2">
               Avisa Swasthya is dedicated to providing comprehensive prenatal
@@ -179,13 +186,7 @@ export default function Page() {
               and give parents peace of mind during this critical phase of life.
             </li>
           </div>
-          <div className="col-span-1">
-                <img 
-                src="/12.png"
-                alt="Vacuum Assisted Delivery Machine"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto"
-                />
-            </div>
+         
         </div>
 
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">

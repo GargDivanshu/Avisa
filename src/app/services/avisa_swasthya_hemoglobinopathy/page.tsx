@@ -195,6 +195,13 @@ hemoglobinopathies.
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Treatment
         </div>
+        <div>
+          <img 
+                src="/10.png"
+                alt="Counseling and Guidance"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                />
+            </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:px-16 px-8">
           <div  className="col-span-1 p-2">
         <li className="py-2">
@@ -229,14 +236,6 @@ treatment plans and provide resources for managing potential side effects.
             Through their commitment to improving treatment options, Avisa aims to
 enhance the quality of life for individuals with hemoglobinopathies.
             </li>
-            </div>
-
-          <div>
-          <img 
-                src="/10.png"
-                alt="Counseling and Guidance"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto"
-                />
             </div>
         </div>
 
