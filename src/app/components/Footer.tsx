@@ -86,7 +86,7 @@ const Footer: FC = () => {
           <div className="text-xl text-primary font-bold py-2">Contact Us</div>
 
           <div className="py-1">
-            Sovereign Global Markets (P) Ltd.
+            Avisa Swasthya (P) Ltd.
             <br />
             409, Mercantile House, K.G. Marg,
             <br />

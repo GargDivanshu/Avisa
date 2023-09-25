@@ -68,7 +68,7 @@ const About: FC = () => {
           fontSize={25}
           className="mx-2"
           />
-          Company Profile
+          Learn More
         </button>
         </Link>
 

@@ -36,7 +36,7 @@ export default function Page() {
     <div className="text-black bg-white md:h-[3300px] h-[6300px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
-      <div className="w-full bg-[url('/blood.jpg')] object-cover h-[200px] blur-sm"></div>
+      <div className="w-full bg-[url('/AllBanner.png')] object-cover h-[200px] blur-sm"></div>
       <div className="rounded-md absolute top-16 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white">
         {/* <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
         Vacuum Assisted Delivery Machine

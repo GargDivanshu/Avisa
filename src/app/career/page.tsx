@@ -16,19 +16,19 @@ export default function Page() {
         <div className="md:mt-[50px]">
         </div>
 
-        <div className="w-full h-[200px] bg-[url('/banner.jpg')]">
+        <div className="w-full h-[200px] bg-[url('/AllBanner.png')]">
 
         </div>
        
         <form 
         action="mailto:divanshu.garg113@gmail.com"
-        className="md:p-8 p-4 text-2xl rounded-md md:w-4/5 w-11/12 shadow-md flex flex-col my-8 absolute top-24 bg-white"
+        className="md:p-8 p-4 text-2xl rounded-md md:w-4/5 w-11/12 flex flex-col my-8 absolute top-24 bg-white"
         >
 
 <div className="font-semibold text-left md:text-5xl text-3xl text-primary">
             Careers
         </div>
-
+{/* 
         <div className="text-left text-primary font-semibold md:text-4xl text-2xl my-8 mb-4">
         Join Us. We are hiring!
         </div>
@@ -37,7 +37,7 @@ export default function Page() {
         className="text-black w-11/12 text-base"
         >
             We are partnering with people having an entrepreneurial mindset and committed to offer superior investment products and services to our investors. We are committed to promote freedom at work, fair compensation and a collaborative learning environment. We also aim to challenge conventional investment philosophies and facilitate change to pursue growth.
-        </div>
+        </div> */}
 
         <div className="text-left text-primary font-semibold md:text-3xl text-xl my-8 mb-4">
         Apply Below

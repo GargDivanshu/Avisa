@@ -34,7 +34,7 @@ export default function Page() {
         <div className="md:mt-[50px]">
         </div>
 
-        <div className="w-full h-[200px] bg-[url('/banner.jpg')]">
+        <div className="w-full h-[200px] bg-[url('/AllBanner.png')]">
 
         </div>
        
@@ -51,9 +51,18 @@ export default function Page() {
         </div>
             <div className="grid justify-between md:grid-cols-2 grid-cols-1">
 
-                <div>
+                <div className="flex flex-col font-bold">
 
                     Address
+
+                    <div className="py-1 my-12 font-normal text-base">
+            <div className="">Avisa Swasthya (P) Ltd.</div>
+            <br />
+            <div className="">409, Mercantile House, K.G. Marg,</div>
+            <br />
+            <div className="">New Delhi, India - 110001</div>
+            <br />
+          </div>
                 </div>
                 
                 <div className="flex flex-col">
