@@ -127,17 +127,18 @@ const Navbar: FC = ({missionRef, careRef}) => {
             <li className="px-4 hover:text-black hover:cursor-pointer">Information Center</li>
           </Link>
 
+          <Link href="/career">
+            <li className="px-4 hover:text-black my-auto hover:cursor-pointer">
+              Careers
+            </li>
+          </Link>
+
           <Link href="/contact">
             <li className="px-4 hover:text-black my-auto hover:cursor-pointer">
               Contact
             </li>
           </Link>
 
-          <Link href="/career">
-            <li className="px-4 hover:text-black my-auto hover:cursor-pointer">
-              Careers
-            </li>
-          </Link>
 
           {/* <Link 
             
@@ -435,19 +436,21 @@ const Navbar: FC = ({missionRef, careRef}) => {
 
             <Link 
             onClick={closeNav}
+            href="/career">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
+                Career
+              </li>
+            </Link>
+
+            <Link 
+            onClick={closeNav}
             href="/contact">
               <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
                 Contact
               </li>
             </Link>
 
-            <Link 
-            onClick={closeNav}
-            href="/career">
-              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
-                Career
-              </li>
-            </Link>
+            
           </ul>
         </div>
       </div>

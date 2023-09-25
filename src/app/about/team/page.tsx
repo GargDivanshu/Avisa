@@ -167,7 +167,7 @@ export default function Page() {
                         />
 
                         <span className="text-xl">
-                        Isha Edema
+                        Esha Dayama
                         </span>
                         <p className="text-sm font-normal">Head - Business Development</p>
 
