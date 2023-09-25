@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { fadeIn, staggerContainer, textVariant } from "./../utils/motion";
 import { motion } from "framer-motion";
+import {AiOutlineInfoCircle} from 'react-icons/ai'
+
 
 const About: FC = () => {
   return (
@@ -55,6 +57,20 @@ const About: FC = () => {
           future.
         </motion.p>
       </motion.div>
+
+     <Link
+     href="/about"
+     >
+      <button
+        className="my-8 flex border-[1px] font-semibold rounded-full bg-primary text-white p-4 justify-center w-fit mx-auto"
+        >
+          <AiOutlineInfoCircle
+          fontSize={25}
+          className="mx-2"
+          />
+          Company Profile
+        </button>
+        </Link>
 
       <motion.span
         variants={staggerContainer}
