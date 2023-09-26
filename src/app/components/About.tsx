@@ -9,12 +9,15 @@ import {AiOutlineInfoCircle} from 'react-icons/ai'
 const About: FC = () => {
   return (
     <div className="text-black rounded-md md:w-full w-full flex flex-col justify-center text-center">
+      <div
+      className="md:h-[75vh] relative"
+      >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
-        className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary"
+        className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary absolute top-0 m-auto left-0 right-0"
       >
         <motion.p
         className="py-8"
@@ -23,27 +26,27 @@ const About: FC = () => {
           About Us
         </motion.p>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
         className="md:text-3xl text-2xl font-bold h-fit my-auto text-primary"
       >
-        {/* <motion.p
+        <motion.p
           className="py-8"
           // variants={fadeIn('up', 'tween', 0.2, 1)}
         >
           Who We Are ?
-        </motion.p> */}
-      </motion.div>
+        </motion.p> 
+      </motion.div> */}
 
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
-        className="md:col-span-2 text-black p-2"
+        className="md:col-span-2 text-black p-2 h-fit absolute bottom-0 top-0 m-auto left-0 right-0"
       >
         <motion.p 
         className="md:w-4/5 w-full mx-auto"
@@ -62,7 +65,7 @@ const About: FC = () => {
      href="/about"
      >
       <button
-        className="my-8 flex border-[1px] font-semibold rounded-full bg-primary text-white p-4 justify-center w-fit mx-auto"
+        className="absolute bottom-0 m-auto left-0 right-0 flex border-[1px] font-semibold rounded-full bg-primary text-white p-4 justify-center w-fit mx-auto"
         >
           <AiOutlineInfoCircle
           fontSize={25}
@@ -71,6 +74,8 @@ const About: FC = () => {
           Learn More
         </button>
         </Link>
+        </div>
+
 
       <motion.span
         variants={staggerContainer}
