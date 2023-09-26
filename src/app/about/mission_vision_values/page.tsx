@@ -69,20 +69,24 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white relative flex min-h-screen lg:h-[1600px] md:h-[2000px] h-[2700px] flex-col items-center md:px-36 px-6 md:pb-36">
+    <main className="bg-white relative flex min-h-screen lg:h-[1600px] md:h-[2000px] h-[2700px] flex-col items-center md:pb-36">
       <Navbar />
-      <div className="bg-transparent h-[100px]"></div>
-      <div id="" className="md:mb-48 mb-96">
+      <div className="md:mt-[50px]">
+        </div>
+
+        <div className="w-full h-[200px] bg-[url('/AllBanner.png')]"></div>
+
+      <div id="" className="md:mb-48 mb-96 md:mx-36 mx-6 absolute top-16">
       
 
         <motion.div 
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        className="flex md:flex-row flex-col text-sm py-6 my-6">
+        className="flex md:flex-row flex-col text-sm py-6 my-6 ">
           <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
-          className=" shadow shadow-primary text-black text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+          className=" shadow shadow-primary text-black text-center justify-center md:px-24 p-6 m-8 flex flex-col  bg-white">
             <TbTargetArrow
               fontSize={75}
               className="mx-auto mb-4 text-primary"
@@ -98,7 +102,7 @@ export default function Page() {
 
           <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
-          className=" shadow shadow-primary text-Black text-center justify-center md:px-24 p-6 m-8 flex flex-col">
+          className=" shadow shadow-primary text-Black text-center justify-center md:px-24 p-6 m-8 flex flex-col bg-white">
             <SlBadge fontSize={75} className="mx-auto mb-4 text-primary" />
             <span className="text-lg font-bold text-primary">Vision</span>
             &quot;Our vision aligns with the nation&apos;s goal to transform

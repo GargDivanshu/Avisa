@@ -29,7 +29,7 @@ export default function Page() {
     });
 };
     return (
-        <main className="text-black bg-white relative flex h-[1380px] flex-col items-center md:pb-36">
+        <main className="text-black bg-white relative flex md:h-[1050px] h-[1380px] flex-col items-center md:pb-36">
         <Navbar/>
         <div className="md:mt-[50px]">
         </div>
@@ -63,6 +63,8 @@ export default function Page() {
             <div className="">New Delhi, India - 110001</div>
             <br />
           </div>
+
+         
                 </div>
                 
                 <div className="flex flex-col">
@@ -89,7 +91,7 @@ export default function Page() {
       name="message" />
       </div>
       
-      <input className="text-white w-fit px-8 text-sm text-center py-2 rounded-md bg-primary hover:bg-primary/50 font-bold" type="submit" value="Send" />
+      <input className="text-white w-fit px-8 text-sm text-center py-2 rounded-md bg-primary hover:bg-primary/50 font-bold" type="submit" value="Submit" />
                 </div>
       </div>
 

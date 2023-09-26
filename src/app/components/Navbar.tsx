@@ -99,10 +99,10 @@ const Navbar: FC = ({missionRef, careRef}) => {
         href="/"
         >
         <Image
-          src="/Avisa-Logo-noname.svg"
+          src="/Avisa-Logo.png"
           alt="Avisa"
-          width="100"
-          height="40"
+          width="55"
+          height="30"
           className="ml-8"
         />
         </Link>
@@ -283,9 +283,9 @@ const Navbar: FC = ({missionRef, careRef}) => {
         />
 
         <Image
-        src="/Avisa-Logo-noname.svg"
-        width="90"
-        height="70"
+        src="/Avisa-Logo.png"
+        width="75"
+        height="50"
         alt="Avisa" 
         className="mx-auto"
         />

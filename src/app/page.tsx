@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -88,7 +89,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
 
   return (
     
-    <main className="text-black bg-white relative flex min-h-screen md:h-[2730px] h-[3700px] flex-col items-center ">
+    <main className="text-black bg-white relative flex min-h-screen md:h-[2800px] h-[3700px] flex-col items-center ">
       <Navbar />
       <div className="bg-transparent md:h-[62px] "></div>
 
@@ -146,7 +147,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
         </Link>
 
         <div
-        className="grid grid-cols-1 md:grid-cols-2 p-8 gap-8 justify-around"
+        className="grid grid-cols-1 md:grid-cols-2 p-8 gap-8 justify-evenly"
         >
         
 
@@ -163,7 +164,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
 
 <img 
         src="/newspaper.png"
-        className=" rounded-md shadow-lg mx-auto "
+        className=" rounded-md shadow-lg mx-auto md:w-[360px] w-full aspect-auto"
         alt="Newspaper"
         />
         </div>

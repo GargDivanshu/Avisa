@@ -72,7 +72,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white relative flex md:h-[1350px] h-[3000px] flex-col items-center md:px-28 px-6 md:pb-36">
+    <main className="bg-white relative flex md:h-[1350px] h-[2800px] flex-col items-center md:px-28 px-6 md:pb-36">
       <Navbar missionRef={missionRef} careRef={careRef}/>
       <div className="bg-transparent h-[100px]"></div>
       <div id="" className="md:mb-48 mb-96">
@@ -84,7 +84,7 @@ export default function Page() {
         className="grid md:grid-cols-2 grid-cols-1 my-4">
           <Image
             alt="Avisa Logo"
-            src="/images/Avisa-Logo.svg"
+            src="/Avisa-Logo.png"
             width="350"
             height="200"
             className=" border-r-[1px] border-primary text-primary mx-auto"
@@ -92,7 +92,7 @@ export default function Page() {
 
           <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
-          className="h-fit my-auto py-16 text-center font-bold text-black align-middle">
+          className="h-fit my-auto py-16 px-4 text-center font-bold text-black align-middle">
             At Avisa Swasthya, we are dedicated to transforming healthcare
             through innovation and compassion. With our advanced diagnostic
             solutions, we ensure accurate and accessible testing for all. From
@@ -467,6 +467,11 @@ export default function Page() {
 
           </div> */}
         {/* </div> */}
+        <a 
+        href="/Company_Profile_Avisa.pdf" download="Company_Profile_Avisa.pdf"
+        className="my-8 flex border-[1px] font-semibold rounded-full bg-primary text-white p-4 justify-center w-fit mx-auto">
+            Download Company Profile 
+          </a>
       </div>
 
       <Footer/>
