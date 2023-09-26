@@ -69,7 +69,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white relative flex min-h-screen md:h-[1600px] h-[2700px] flex-col items-center md:px-36 px-6 md:pb-36">
+    <main className="bg-white relative flex min-h-screen lg:h-[1600px] md:h-[2000px] h-[2700px] flex-col items-center md:px-36 px-6 md:pb-36">
       <Navbar />
       <div className="bg-transparent h-[100px]"></div>
       <div id="" className="md:mb-48 mb-96">

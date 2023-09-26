@@ -72,7 +72,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-white relative flex md:h-[1200px] h-[3000px] flex-col items-center md:px-36 px-6 md:pb-36">
+    <main className="bg-white relative flex md:h-[1350px] h-[3000px] flex-col items-center md:px-28 px-6 md:pb-36">
       <Navbar missionRef={missionRef} careRef={careRef}/>
       <div className="bg-transparent h-[100px]"></div>
       <div id="" className="md:mb-48 mb-96">
