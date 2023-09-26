@@ -10,14 +10,14 @@ const About: FC = () => {
   return (
     <div className="text-black rounded-md md:w-full w-full flex flex-col justify-center text-center">
       <div
-      className="md:h-[75vh] relative"
+      className="md:h-[75vh] md:relative"
       >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
-        className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary absolute top-0 m-auto left-0 right-0"
+        className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary md:absolute top-0 m-auto left-0 right-0"
       >
         <motion.p
         className="py-8"
@@ -46,7 +46,7 @@ const About: FC = () => {
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
-        className="md:col-span-2 text-black p-2 h-fit absolute bottom-0 top-0 m-auto left-0 right-0"
+        className="md:col-span-2 text-black p-2 h-fit md:absolute bottom-0 top-0 m-auto left-0 right-0"
       >
         <motion.p 
         className="md:w-4/5 w-full mx-auto"
