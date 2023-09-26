@@ -82,7 +82,7 @@ const About: FC = () => {
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
-        className="text-center md:text-3xl text-2xl  text-primary font-bold col-span-4 py-4"
+        className="text-center md:text-3xl text-2xl  text-primary font-bold col-span-4 py-12"
       >
         <motion.p
         className="my-4 md:text-5xl text-3xl"
@@ -96,7 +96,7 @@ const About: FC = () => {
         initial="hidden"
         whileInView="show"
         // viewport={{ once: false, amount: 0.1 }}
-        className="grid md:grid-cols-4 grid-cols-1 col-span-3 text-sm font-semibold text-white"
+        className="grid md:grid-cols-4 grid-cols-1 col-span-3 text-sm font-semibold text-white my-12"
       >
         <Link href="/services/avisa_swasthya_hemoglobinopathy">
           <div

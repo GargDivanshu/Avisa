@@ -89,7 +89,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
 
   return (
     
-    <main className="text-black bg-white relative flex min-h-screen md:h-[2800px] h-[3700px] flex-col items-center ">
+    <main className="text-black bg-white relative flex min-h-screen md:h-[2900px] h-[3400px] flex-col items-center ">
       <Navbar />
       <div className="bg-transparent md:h-[62px] "></div>
 
