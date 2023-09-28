@@ -48,7 +48,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
   const CarouselData = [
     {
       id: 1,
-      img: "bg-[url('./../../public/Banner1.png')]",
+      img: "bg-[url('./../../public/Banner3.png')]",
       text: "Thalassaemia Solutions: 'Pioneering Breakthroughs for Optimal Well-being'",
     },
     {
@@ -58,7 +58,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
     },
     {
       id: 3,
-      img: "bg-[url('./../../public/Banner3.png')]",
+      img: "bg-[url('./../../public/Banner1.png')]",
       text: "The Future of Thalassaemia Diagnosis: Leveraging AI for precise results",
     },
   ];
