@@ -112,7 +112,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
         </motion.div>
       </div>
       <div
-      className="md:mx-24 mx-6"
+      className="md:mx-20 mx-6"
       >
       <About />
       </div>
@@ -122,6 +122,47 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
          className="md:text-3xl text-center my-4 py-8 text-2xl font-bold h-fit my-auto text-primary"
         >Information Center</h1> */}
 
+        
+
+<motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        // viewport={{ once: false, amount: 0.1 }}
+        className="md:text-5xl text-3xl font-bold h-fit my-auto text-primary text-center top-0 m-auto left-0 right-0"
+      >
+        <motion.p
+        className="py-8"
+        // variants={fadeIn('up', 'tween', 0.2, 1)}
+        >
+         Information Center
+        </motion.p>
+      </motion.div>
+
+
+        <div
+        className="grid grid-cols-1 md:grid-cols-2 p-8 gap-8 justify-evenly"
+        >
+        
+
+        <img 
+        src="/Twitter_post.png"
+        className="rounded-md shadow-lg  mx-auto md:w-[350px] w-full aspect-auto"
+        alt="Twitter"
+        />
+        <img 
+        src="/newspaper-2.png"
+        className=" rounded-md shadow-lg mx-auto md:w-[400px] w-full aspect-auto"
+        alt="Newspaper"
+        />
+
+{/* <img 
+        src="/newspaper.png"
+        className=" rounded-md shadow-lg mx-auto md:w-[360px] w-full aspect-auto"
+        alt="Newspaper"
+        /> */}
+        
+        </div>
         <iframe
           height="260"
           className="md:w-1/2 w-full mx-auto"
@@ -145,30 +186,6 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
           Information Center
         </button>
         </Link>
-
-        <div
-        className="grid grid-cols-1 md:grid-cols-2 p-8 gap-8 justify-evenly"
-        >
-        
-
-        <img 
-        src="/Twitter_post.png"
-        className="rounded-md shadow-lg  mx-auto md:w-[350px] w-full aspect-auto"
-        alt="Twitter"
-        />
-        <img 
-        src="/newspaper-2.png"
-        className=" rounded-md shadow-lg mx-auto md:w-[400px] w-full aspect-auto"
-        alt="Newspaper"
-        />
-
-<img 
-        src="/newspaper.png"
-        className=" rounded-md shadow-lg mx-auto md:w-[360px] w-full aspect-auto"
-        alt="Newspaper"
-        />
-        </div>
-
         
       </div>
       <Footer />

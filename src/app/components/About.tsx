@@ -10,7 +10,7 @@ const About: FC = () => {
   return (
     <div className="text-black rounded-md md:w-full w-full flex flex-col justify-center text-center">
       <div
-      className="md:h-[60vh] md:relative"
+      className="md:h-[65vh] md:relative"
       >
       <motion.div
         variants={staggerContainer}
@@ -49,7 +49,7 @@ const About: FC = () => {
         className="md:col-span-2 text-black p-2 h-fit md:absolute bottom-0 top-0 m-auto left-0 right-0"
       >
         <motion.p 
-        className="md:w-11/12 w-full text-lg mx-auto"
+        className=" w-full text-lg mx-auto"
         variants={fadeIn("up", "tween", 0.1, 0.9)}>
           At Avisa Swasthya, we are dedicated to transforming healthcare through
           innovation and compassion. With our advanced diagnostic solutions, we
