@@ -206,19 +206,19 @@ export default function Page() {
           </div>
 
 
-          <div className="sm:grid grid-cols-2 gap-4 text-white p-16 hidden">
+          <div className="sm:grid grid-cols-2 gap-2 text-white p-16 hidden">
             <div className="relative bg-primary h-24 gap-4">
               <div className="absolute top-0 left-0 p-2 text-sm w-4/5">
                 Community participation in society at large.
               </div>
 
-              <div className="absolute bottom-0 right-0 text-5xl font-bold bg-red-400 text-white rounded-tl-full p-4 text-center align-middle">
+              <div className="absolute bottom-0 right-0 text-5xl font-bold bg-red-400 text-white rounded-tl-[4rem] p-4 pb-2 text-center align-middle">
                 C
               </div>
             </div>
 
             <div className="relative h-24 bg-primary gap-4">
-              <div className="absolute text-5xl font-bold bottom-0 left-0 bg-red-400 text-white rounded-tr-full p-4 text-center align-middle">
+              <div className="absolute text-5xl font-bold bottom-0 left-0 bg-red-400 text-white rounded-tr-[4rem] p-4 pb-2 text-center align-middle">
                 A
               </div>
 
@@ -228,7 +228,7 @@ export default function Page() {
             </div>
 
             <div className="relative bg-primary h-24 gap-4">
-              <div className="absolute right-0 top-0 font-bold text-5xl p-4 rounded-bl-full bg-red-400 text-white text-center align-middle">
+              <div className="absolute right-0 top-0 font-bold text-5xl p-4 pt-2 rounded-bl-[4rem] bg-red-400 text-white text-center align-middle">
                 R
               </div>
 
@@ -239,7 +239,7 @@ export default function Page() {
             </div>
 
             <div className="relative bg-primary h-24 gap-4">
-              <div className="absolute left-0 top-0 font-bold text-5xl p-4 rounded-br-full bg-red-400 text-white text-center align-middle">
+              <div className="absolute left-0 top-0 font-bold text-5xl p-4 pt-2 rounded-br-[4rem] bg-red-400 text-white text-center align-middle">
                 E
               </div>
               

@@ -31,7 +31,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[3500px] h-[6000px] mx-auto relative">
+    <div className="text-black bg-white md:h-[3500px] h-[5600px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/AllBanner.png')] object-cover h-[200px] blur-sm"></div>
@@ -103,11 +103,11 @@ export default function Page() {
           {/* (Sickle Cell, Thalassemia (gazelle) and Anemia */}
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:mx-28 px-8 py-4 border-b-[1px] border-b-primary">
-            <div className="relative">
+            <div className="md:relative">
                 <img 
                 src="/8.png"
                 alt="Counseling and Guidance"
-                className="md:w-[300px] w-[150px] aspect-auto absolute top-0 bottom-0 left-0 right-0 m-auto"
+                className="md:w-[300px] w-[150px] aspect-auto md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0 m-auto"
                 />
             </div>
         
@@ -151,11 +151,11 @@ management of Hemoglobinopathy diseases.
           Counseling and Guidance
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:mx-28 px-8 py-4 border-b-[1px] border-b-primary">
-            <div className="relative">
+            <div className="md:relative">
                 <img 
                 src="/9.png"
                 alt="Counseling and Guidance"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto absolute top-0 bottom-0 right-0 left-0 m-auto"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto md:absolute md:top-0 md:bottom-0 md:right-0 md:left-0 m-auto"
                 />
             </div>
           <div className="col-span-1 p-2">
@@ -197,11 +197,11 @@ hemoglobinopathies.
         </div>
        
         <div className="grid md:grid-cols-2 grid-cols-1 md:mx-28 px-8 py-4 border-b-[1px] border-b-primary">
-        <div className="relative">
+        <div className="md:relative">
           <img 
                 src="/10.png"
                 alt="Counseling and Guidance"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto absolute top-0 bottom-0 right-0 left-0 m-auto"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto md:absolute md:top-0 md:bottom-0 md:right-0 md:left-0 m-auto"
                 />
             </div>
           <div  className="col-span-1 p-2">
