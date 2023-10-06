@@ -32,7 +32,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[2600px] h-[4200px] mx-auto relative flex flex-col">
+    <div className="text-black bg-white md:h-[2400px] h-[4200px] mx-auto relative flex flex-col">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/AllBanner.png')] object-cover h-[200px] blur-sm"></div>
@@ -101,12 +101,12 @@ export default function Page() {
           Health Education
         </div>
         
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
-        <div>
+        <div className="grid md:grid-cols-3 grid-cols-1 mx-28 py-4 border-b-[1px] border-b-primary">
+        <div className="relative">
                 <img 
                 src="/8.png"
                 alt="Counseling and Guidance"
-                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1"
+                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1 absolute top-0 bottom-0 left-0 right-0 m-auto"
                 />
             </div>
           <div className="col-span-2 p-2">
@@ -133,12 +133,12 @@ conducted by our knowledgeable healthcare professionals.
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Health Research
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
-        <div>
+        <div className="grid md:grid-cols-3 grid-cols-1 mx-28 py-4 border-b-[1px] border-b-primary">
+        <div className="relative">
                 <img 
                 src="/20.png"
                 alt="Counseling and Guidance"
-                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1"
+                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1 absolute top-0 bottom-0 left-0 right-0 m-auto"
                 />
             </div>
           <div className="col-span-2 p-2 ">
@@ -165,8 +165,8 @@ addressing prevalent health issues in the community.
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
         Health Infomatics
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
-        <div>
+        <div className="grid md:grid-cols-3 grid-cols-1 mx-28 py-4 border-b-[1px] border-b-primary">
+        <div className="relative">
                 <img 
                 src="/21.png"
                 alt="Counseling and Guidance"

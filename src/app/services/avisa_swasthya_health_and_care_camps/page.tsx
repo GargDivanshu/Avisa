@@ -32,7 +32,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[2400px] h-[4500px] mx-auto relative">
+    <div className="text-black bg-white md:h-[2300px] h-[4500px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/AllBanner.png')] object-cover h-[200px] blur-sm"></div>
@@ -110,7 +110,7 @@ health awareness and drive important research for a healthier future.&quot;
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Sickle Cell and Thalassemia Diagnosis
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:mx-28 py-4 border-b-[1px] border-b-primary">
         <div className="text-xl col-span-1 font-bold py-4 my-auto flex flex-col h-full">
                 <img 
                 src="/17.png"
@@ -153,7 +153,7 @@ conditions on individuals and families.
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           General Health Camps
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:mx-28 py-4 border-b-[1px] border-b-primary">
         <div className="text-xl col-span-1 font-bold py-4 my-auto flex flex-col h-full">
                 <img 
                 src="/18.png"

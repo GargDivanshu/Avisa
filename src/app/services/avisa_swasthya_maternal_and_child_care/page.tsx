@@ -103,12 +103,12 @@ export default function Page() {
         <div className="text-center w-4/5 text-3xl text-primary font-bold mx-auto py-4">
           Vacuum Assisted Delivery Machine
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 md:px-16 px-8">
-        <div className="col-span-1">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:mx-28 px-8 py-4 border-b-[1px] border-b-primary">
+        <div className="col-span-1 relative">
                 <img 
                 src="/11.png"
                 alt="Vacuum Assisted Delivery Machine"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto absolute top-0 bottom-0 left-0 right-0"
                 />
             </div>
           <div className="col-span-2 p-2">
@@ -148,13 +148,13 @@ export default function Page() {
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Prenatal Care
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:mx-28 py-4 border-b-[1px] border-b-primary">
           {/* <div>some image</div> */}
-          <div className="col-span-1">
+          <div className="col-span-1 relative">
                 <img 
                 src="/12.png"
                 alt="Vacuum Assisted Delivery Machine"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto absolute top-0 bottom-0 left-0 right-0 m-auto"
                 />
             </div>
           <div className="col-span-2 p-2">
@@ -193,12 +193,12 @@ export default function Page() {
           Antenatal Care
         </div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
-        <div className="col-span-1">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:mx-28 py-4 border-b-[1px] border-b-primary">
+        <div className="col-span-1 relative">
                 <img 
                 src="/13.png"
                 alt="Vacuum Assisted Delivery Machine"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto absolute top-0 bottom-0 left-0 right-0"
                 />
             </div>
           <div className="col-span-2 p-2">
@@ -248,12 +248,12 @@ export default function Page() {
         <div className="w-4/5 text-3xl text-primary font-bold mx-auto py-4 text-center my-8">
           Postnatal Care
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
-        <div className="col-span-1">
+        <div className="grid md:grid-cols-3 grid-cols-1 px-8 py-4 border-b-[1px] border-b-primary">
+        <div className="col-span-1 relative">
                 <img 
                 src="/14.png"
                 alt="Vacuum Assisted Delivery Machine"
-                className="md:w-[300px] w-[150px] m-auto aspect-auto"
+                className="md:w-[300px] w-[150px] m-auto aspect-auto absolute top-0 bottom-0 left-0 right-0 m-auto"
                 />
             </div>
           <div className="col-span-2 p-2">

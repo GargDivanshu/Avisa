@@ -4,7 +4,22 @@ import Footer from './../components/Footer';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import {BsUpload} from 'react-icons/bs'
+import Link from 'next/link'
 
+
+const ButtonMailto = ({ mailto, label }) => {
+    return (
+        <Link
+            href='#'
+            onClick={(e) => {
+                window.location.href = mailto;
+                e.preventDefault();
+            }}
+        >
+            {label}
+        </Link>
+    );
+};
 
 
 export default function Page() {
@@ -95,7 +110,7 @@ export default function Page() {
       <input className="text-white w-fit px-8 text-sm text-center py-2 rounded-md bg-primary hover:bg-primary/50 font-bold" type="submit" value="Submit" />
                 </div>
       </div>
-
+      {/* <ButtonMailto label="Write me an E-Mail" mailto="mailto:divanshu.garg113@gmail.com" /> */}
       
       
     </form>
