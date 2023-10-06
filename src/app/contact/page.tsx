@@ -29,7 +29,7 @@ export default function Page() {
     });
 };
     return (
-        <main className="text-black bg-white relative flex md:h-[1050px] h-[1380px] flex-col items-center md:pb-36">
+        <main className="text-black bg-white relative flex md:h-[1050px] h-[150px] flex-col items-center md:pb-36">
         <Navbar/>
         <div className="md:mt-[50px]">
         </div>
@@ -42,11 +42,11 @@ export default function Page() {
         className="md:p-8 p-4 text-2xl rounded-md md:w-4/5 w-11/12 shadow-md flex flex-col my-8 absolute top-24 bg-white"
         ref={form} onSubmit={sendEmail} >
 
-<div className="font-semibold text-left md:text-3xl text-xl text-primary">
+<div className="font-bold text-left md:text-3xl text-3xl text-primary">
             Contact Us
         </div>
 
-        <div className="text-center font-semibold">
+        <div className="text-center font-semibold my-8">
             Feel free to get in touch with us
         </div>
             <div className="grid justify-between md:grid-cols-2 grid-cols-1">
@@ -55,7 +55,7 @@ export default function Page() {
 
                     Address
 
-                    <div className="py-1 my-12 font-normal text-base">
+                    <div className="py-1 md:my-6 my-3  font-normal text-base">
             <div className="">Avisa Swasthya (P) Ltd.</div>
             <br />
             <div className="">409, Mercantile House, K.G. Marg,</div>
