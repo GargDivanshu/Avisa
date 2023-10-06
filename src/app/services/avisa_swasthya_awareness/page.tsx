@@ -32,11 +32,11 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[2400px] h-[4200px] mx-auto relative flex flex-col">
+    <div className="text-black bg-white md:h-[2550px] h-[4200px] mx-auto relative flex flex-col">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/AllBanner.png')] object-cover h-[200px] blur-sm"></div>
-      <div className="rounded-md absolute top-16 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white">
+      <div className="rounded-md absolute top-16 md:top-40 left-0 right-0 mx-auto w-11/12 h-fit bg-white py-24">
         {/* <div className="mx-auto w-2/5 h-fit text-center md:text-3xl font-bold text-primary text-xl">
         Vacuum Assisted Delivery Machine
         </div>
@@ -106,7 +106,7 @@ export default function Page() {
                 <img 
                 src="/8.png"
                 alt="Counseling and Guidance"
-                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1 absolute top-0 bottom-0 left-0 right-0 m-auto"
+                className="md:w-[200px] w-[100px] m-auto aspect-auto col-span-1 absolute top-0 bottom-0 left-0 right-0"
                 />
             </div>
           <div className="col-span-2 p-2">

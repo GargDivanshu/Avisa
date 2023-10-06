@@ -123,6 +123,10 @@ const Navbar: FC = ({missionRef, careRef}) => {
           Services
         </li>
 
+        <Link href="/products">
+            <li className="px-4 hover:text-black hover:cursor-pointer">Products</li>
+          </Link>
+
         <Link href="/information_center">
             <li className="px-4 hover:text-black hover:cursor-pointer">Information Center</li>
           </Link>
@@ -185,7 +189,7 @@ const Navbar: FC = ({missionRef, careRef}) => {
             </ul>
           )}
           {hoverServices && (
-            <ul className="text-primary text-sm">
+            <ul className="text-primary text-sm text-left">
               <Link href="/services/avisa_swasthya_hemoglobinopathy">
               <div className="hover:bg-black/10 rounded-md p-2 border-b-[1px] cursor-pointer duration-100 ease-in">
                 Avisa Swasthya Hemoglobinopathy
@@ -424,6 +428,14 @@ const Navbar: FC = ({missionRef, careRef}) => {
               </div>
             </Link>
             </div>
+
+            <Link 
+            onClick={closeNav}
+            href="/products">
+              <li className="shadow-lg p-4 hover:text-black hover:cursor-pointer text-primary text-center ">
+                Products
+              </li>
+            </Link>
           
 
             <Link 
@@ -433,6 +445,8 @@ const Navbar: FC = ({missionRef, careRef}) => {
                 Information Center
               </li>
             </Link>
+
+
 
             <Link 
             onClick={closeNav}
