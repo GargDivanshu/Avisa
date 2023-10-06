@@ -29,7 +29,7 @@ export default function Page() {
     });
 };
     return (
-        <main className="text-black bg-white relative flex md:h-[1050px] h-[150px] flex-col items-center md:pb-36">
+        <main className="text-black bg-white relative flex md:h-[1050px] h-[1500px] flex-col items-center md:pb-36">
         <Navbar/>
         <div className="md:mt-[50px]">
         </div>
