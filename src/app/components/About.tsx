@@ -10,7 +10,7 @@ const About: FC = () => {
   return (
     <div className="text-black md:w-full w-full flex flex-col border-b-primary border-b-[1px] justify-center text-center">
       <div
-      className="md:h-[65vh] md:relative border-b-primary border-b-[1px] py-4"
+      className="md:h-[60vh] md:relative border-b-primary border-b-[1px] py-4"
       >
 
        

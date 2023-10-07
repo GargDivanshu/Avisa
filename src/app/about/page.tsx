@@ -467,7 +467,8 @@ export default function Page() {
 
           </div> */}
         {/* </div> */}
-        <a target="_blank"
+        <a 
+        target="_blank"
         href="/Company_Profile_Avisa.pdf" download="Company_Profile_Avisa.pdf"
         className="my-8 flex border-[1px] font-semibold rounded-full bg-primary text-white p-4 justify-center w-fit mx-auto">
             Download Company Profile 
