@@ -94,7 +94,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
       <div className="bg-transparent md:h-[62px] "></div>
 
       <div
-        className={`relative md:mx-24 w-full bg-center bg-no-repeat bg-contain md:bg-cover md:h-[500px] h-[400px] ${img} md:mb-4`}
+        className={`relative md:mx-12 w-full bg-center bg-no-repeat bg-contain md:bg-cover md:h-[500px] h-[400px] ${img} md:mb-4`}
       >
         <motion.div
           variants={staggerContainer}
@@ -112,7 +112,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
         </motion.div>
       </div>
       <div
-      className="md:mx-20 mx-6"
+      className="md:mx-12 mx-6"
       >
       <About />
       </div>

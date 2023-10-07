@@ -10,7 +10,7 @@ const About: FC = () => {
   return (
     <div className="text-black md:w-full w-full flex flex-col border-b-primary border-b-[1px] justify-center text-center">
       <div
-      className="md:h-[65vh] md:relative border-b-primary border-b-[1px]"
+      className="md:h-[65vh] md:relative border-b-primary border-b-[1px] py-4"
       >
 
        
@@ -67,7 +67,7 @@ const About: FC = () => {
      href="/about"
      >
       <button
-        className="my-auto absolute bottom-0 m-auto left-0 right-0 flex border-[1px] font-semibold rounded-full bg-primary text-white p-4 justify-center w-fit mx-auto"
+        className="my-auto mb-8 md:absolute bottom-0 m-auto left-0 right-0 flex border-[1px] font-semibold rounded-full bg-primary text-white p-4 justify-center w-fit mx-auto"
         >
           <AiOutlineInfoCircle
           fontSize={25}
