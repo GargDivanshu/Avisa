@@ -32,7 +32,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[2550px] h-[4200px] mx-auto relative flex flex-col">
+    <div className="text-black bg-white md:h-[2500px] h-[4200px] mx-auto relative flex flex-col">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/AllBanner.png')] object-cover h-[200px] blur-sm"></div>
