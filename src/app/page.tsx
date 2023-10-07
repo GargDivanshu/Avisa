@@ -89,7 +89,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
 
   return (
     
-    <main className="text-black bg-white relative flex min-h-screen md:h-[2700px] h-[3650px] flex-col items-center ">
+    <main className="text-black bg-white relative flex min-h-screen md:h-[2900px] h-[3650px] flex-col items-center ">
       <Navbar />
       <div className="bg-transparent md:h-[62px] "></div>
 
@@ -135,7 +135,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
         className="py-8"
         // variants={fadeIn('up', 'tween', 0.2, 1)}
         >
-         Learn More
+         Information Center
         </motion.p>
       </motion.div>
 

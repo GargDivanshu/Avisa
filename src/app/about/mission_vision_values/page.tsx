@@ -76,8 +76,11 @@ export default function Page() {
 
         <div className="w-full h-[200px] bg-[url('/AllBanner.png')]"></div>
 
-      <div id="" className="md:mb-48 mb-96 md:mx-36 mx-6 absolute top-16">
-      
+        
+      <div id="" className="md:mb-48 mb-96 md:mx-36 mx-6 ">
+      <h1 className="md:text-3xl text-2xl text-primary font-semibold m-8">
+          Mission, Vision, Values
+        </h1>
 
         <motion.div 
         variants={staggerContainer}
