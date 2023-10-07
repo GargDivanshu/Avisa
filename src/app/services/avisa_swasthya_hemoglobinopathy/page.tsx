@@ -31,7 +31,7 @@ export default function Page() {
   };
 
   return (
-    <div className="text-black bg-white md:h-[3500px] h-[5600px] mx-auto relative">
+    <div className="text-black bg-white md:h-[3400px] h-[5600px] mx-auto relative">
       <Navbar />
       <div className="bg-transparent h-[50px]"></div>
       <div className="w-full bg-[url('/AllBanner.png')] object-cover h-[200px] blur-sm"></div>
