@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   description: 'Health is a state of physical, mental, and social well-being that enables everyone to live productively',
   icons: {
     icon: "public/Avisa-Logo-noname.ico"
-  }
+  },
+  // "google-site-verification": "R4aKn3yz01sL3CNoLUg3Zaa-UKAHYIUFC8J69mMNcBg",
 }
 
 
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
    
-
+   <meta name="google-site-verification" content="R4aKn3yz01sL3CNoLUg3Zaa-UKAHYIUFC8J69mMNcBg" />
       <body className={`${poppins.variable}`}>
       {/* <pre
       className="ascii-art"
