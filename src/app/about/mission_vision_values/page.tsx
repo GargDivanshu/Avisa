@@ -105,7 +105,7 @@ export default function Page() {
 
           <motion.div 
           variants={fadeIn('up', 'tween', 0.1, 0.9)}
-          className=" shadow shadow-primary text-Black text-center justify-center md:px-24 p-6 m-8 flex flex-col bg-white">
+          className=" shadow shadow-primary text-black text-center justify-center md:px-24 p-6 m-8 flex flex-col bg-white">
             <SlBadge fontSize={75} className="mx-auto mb-4 text-primary" />
             <span className="text-lg font-bold text-primary">Vision</span>
             &quot;Our vision aligns with the nation&apos;s goal to transform
