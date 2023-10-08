@@ -104,7 +104,7 @@ __| | _ __   __ __ _  _ __   ___ | |__   _   _     __ _   __ _  _ __  __ _ | | |
           className="container rounded-lg absolute top-0 bottom-0 left-0 right-0 m-auto w-4/5 h-fit bg-white/50"
         >
           <motion.span
-            variants={textVariant(1.1)}
+            variants={textVariant(0.9)}
             className="md:text-3xl text-white text-xl font-bold text-left h-fit absolute top-0 bottom-0 left-0 right-0 m-auto"
           >
             {text}
